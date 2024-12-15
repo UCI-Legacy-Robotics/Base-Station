@@ -1,8 +1,24 @@
-# React + Vite
+# Legacy Base Station
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository provides the base station UI for legacy robotics using **React**, **Vite**, and **Tailwind CSS**.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**: A JavaScript library for building user interfaces.
+- **Vite**: A lightning-fast development tool with hot module replacement (HMR).
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+
+## Setup Instructions
+
+1. Clone the repository:
+   ```bash
+   git clone git@github.com:UCI-Legacy-Robotics/Base-Station.git
+   cd Base-Station
+
+2. Install dependencies:
+   ```bash
+   npm install
+
+3. Start the development server:
+   ```bash
+   npm run dev
