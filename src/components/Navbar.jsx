@@ -16,14 +16,15 @@ import PicturesIcon from "../assets/PicturesIcon.png";
 
 // CSS Classes
 const styles = {
-  navbar: "absolute left-[2.0625rem] top-[1.1875rem] bottom-[1.1875rem] w-[21.4375rem] text-[#FFFFFF] rounded-[0.5rem] bg-[#041428]",
+  navbar: "absolute left-[2.0625rem] top-[1.1875rem] bottom-[1.1875rem] w-[18rem] text-[#FFFFFF] rounded-[0.5rem] bg-[#041428]",
   container: "p-4",
-  heading: "flex items-center text-[2rem] font-bold mb-4 space-x-2 font-russo",
+  heading: "flex items-center text-[2rem] mb-4 space-x-2 font-russo",
   list: "space-y-2",
   lineDivider: "my-4 w-full",
   icon: "w-[1.875rem] h-[1.875rem]",
   logo: "w-[4.4375rem] h-[4.1875rem]",
-  text: "font-russo",
+  headerText: "font-russo leading-tight",
+  text: "font-russo leading-tight text-[1.375rem]"
 };
 
 // Helper function to get classes for active/inactive links
@@ -45,7 +46,7 @@ const Navbar = () => {
         */}
         <h2 className={styles.heading}>
           <img src={LegacyLogo} alt="Legacy Logo" className={styles.logo} />
-          <span>Legacy Robotics</span>
+          <span className={styles.headerText}>LEGACY ROBOTICS</span>
         </h2>
         <img src={LineDivide} alt="Divider" className={styles.lineDivider} />
         <ul className={styles.list}>
