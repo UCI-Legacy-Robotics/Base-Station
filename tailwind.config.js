@@ -2,11 +2,15 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        russo: ['"Russo One"', 'sans-serif'],
+        chivo: ['"Chivo"', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
-}
-
+};
