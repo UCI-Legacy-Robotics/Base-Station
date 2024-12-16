@@ -16,13 +16,13 @@ const headingClasses = [
   "font-bold"
 ].join(' ');
 
-const Navigation = () => {
+const Arm = () => {
   return (
     <div className={containerClasses}>
       <Navbar />
-      <h1 className={headingClasses}>Navigation Page!</h1>
+      <h1 className={headingClasses}>Arm Page!</h1>
     </div>
   );
 };
 
-export default Navigation;
+export default Arm;

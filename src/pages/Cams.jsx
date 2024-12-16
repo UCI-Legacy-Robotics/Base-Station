@@ -16,13 +16,13 @@ const headingClasses = [
   "font-bold"
 ].join(' ');
 
-const Navigation = () => {
+const Cams = () => {
   return (
     <div className={containerClasses}>
       <Navbar />
-      <h1 className={headingClasses}>Navigation Page!</h1>
+      <h1 className={headingClasses}>Cams Page!</h1>
     </div>
   );
 };
 
-export default Navigation;
+export default Cams;
