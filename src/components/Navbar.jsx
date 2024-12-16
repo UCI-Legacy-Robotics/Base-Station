@@ -16,7 +16,7 @@ import PicturesIcon from "../assets/PicturesIcon.png";
 
 // CSS Classes
 const styles = {
-  navbar: "absolute left-[2.0625rem] top-[1.1875rem] bottom-[1.1875rem] w-[18rem] text-[#FFFFFF] rounded-[0.5rem] bg-[#041428]",
+  navbar: "absolute left-[1rem] top-[1rem] bottom-[1rem] w-[18rem] text-[#FFFFFF] rounded-[0.5rem] bg-[#041428]",
   container: "p-4",
   heading: "flex items-center text-[2rem] mb-4 space-x-2 font-russo",
   list: "space-y-2",
@@ -24,7 +24,7 @@ const styles = {
   icon: "w-[1.875rem] h-[1.875rem]",
   logo: "w-[4.4375rem] h-[4.1875rem]",
   headerText: "font-russo leading-tight",
-  text: "font-russo leading-tight text-[1.375rem]"
+  text: "font-russo leading-tight text-[0.8em]"
 };
 
 // Helper function to get classes for active/inactive links
