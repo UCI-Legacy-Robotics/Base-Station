@@ -1,27 +1,17 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
+import Layout from '../components/Layout';
 
-const containerClasses = [
-  "flex",
-  "items-center",
-  "justify-center",
-  "h-screen",
-  "bg-[#0A2342]",
-  "relative"
-].join(' ');
-
-const headingClasses = [
-  "text-white",
-  "text-4xl",
-  "font-bold"
-].join(' ');
+// Styles object
+const styles = {
+  Heading: "text-white text-5xl font-extrabold pl-[19.875rem] pt-[1rem]",
+};
 
 const Science = () => {
   return (
-    <div className={containerClasses}>
-      <Navbar />
-      <h1 className={headingClasses}>Science Page!</h1>
-    </div>
+    <Layout>
+      <h1 className={styles.Heading}>Science</h1>
+      {/* more content */}
+    </Layout>
   );
 };
 
