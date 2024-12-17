@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 import TeleopIndicator from '../assets/BlueIndicator.png';
 import AutoIndicator from '../assets/RedIndicator.png';
 import ArrivalIndicator from '../assets/GreenIndicator.png';
 import EmptyBattery from '../assets/EmptyBattery.png';
+import QuarterBattery from '../assets/QuarterBattery.png';
+import HalfBattery from '../assets/HalfBattery.png';
+import ThreeQuarterBattery from '../assets/ThreeQuarterBattery.png';
+import FullBattery from '../assets/FullBattery.png';
 import NoConnection from '../assets/NoConnection.png';
 import LowConnection from '../assets/LowConnection.png';
 import HighConnection from '../assets/HighConnection.png';
@@ -12,6 +16,8 @@ import ExitWarning from '../assets/ExitBlack.png';
 import AlertIndicator from '../assets/AlertIndicator.png';
 import ErrorIndicator from '../assets/ErrorIndicator.png';
 import WarningIndicator from '../assets/WarningIndicator.png';
+import UpArrow from '../assets/UpArrow.png';
+import DownArrow from '../assets/DownArrow.png';
 
 // Extended styles object with updated classes
 const styles = {
@@ -20,7 +26,7 @@ const styles = {
   text: "text-white font-chivo text-base text-[1.14em] cursor-pointer",
   image: "w-[2rem] h-[2rem] cursor-pointer",
   popup: "fixed inset-0 flex items-center justify-center z-50",
-  popupBox: "w-[50rem] h-[31.25rem] bg-[#041428] rounded-lg shadow-lg p-[1rem] flex flex-col justify-between relative",
+  popupBox: "w-[50rem] h-[31.25rem] bg-[#041428] rounded-lg shadow-lg p-[1rem] flex flex-col justify-center relative",
   popupHeader: "w-full h-[4.875rem] border-[0.375rem] border-black flex items-center px-[1rem] absolute top-0 left-0 rounded-t-lg",
   popupTitle: "text-4xl font-bold",
   exitImage: "w-[2.5rem] h-[2.5rem] cursor-pointer absolute right-[1rem] top-1/2 transform -translate-y-1/2",
@@ -28,6 +34,13 @@ const styles = {
   buttonStop: "px-[2rem] py-[0.5rem] rounded-[0.5rem] bg-[#9B111E] text-white font-russo text-[1.4em] hover:opacity-80",
   buttonStart: "px-[2rem] py-[0.5rem] rounded-[0.5rem] bg-[#305E69] text-white font-russo text-[1.4em] hover:opacity-80",
   overlay: "fixed inset-0 bg-[#323232] bg-opacity-75 z-40",
+  timerPopupContainer: "flex items-center justify-center space-x-6",
+  timerSection: "flex flex-col items-start space-y-0",
+  timerControls: "flex items-center space-x-3",
+  timerDigit: "text-white font-bold font-russo text-[6rem]",
+  colon: "text-white font-bold font-russo text-[8rem] m-0 flex items-center mt-4",
+  arrowContainer: "flex flex-col space-y-4",
+  arrowImage: "w-[3rem] h-[2.5rem] cursor-pointer",
 };
 
 const StatusBar = () => {
@@ -35,9 +48,18 @@ const StatusBar = () => {
   const [longitude, setLongitude] = useState("000.000");
   const [latitude, setLatitude] = useState("000.000");
   const [altitude, setAltitude] = useState("000m");
-  const [timer, setTimer] = useState("00:00:00");
+
+  // Timer state variables
+  const [initialTime, setInitialTime] = useState(0); // in seconds
+  const [remainingTime, setRemainingTime] = useState(0);
+  const [isRunning, setIsRunning] = useState(false);
+  const timerRef = useRef(null);
+
+  const [hours, setHours] = useState(0);
+  const [minutes, setMinutes] = useState(0);
+
   const [connectionStatus, setConnectionStatus] = useState("Disconnected");
-  const [batteryLevel, setBatteryLevel] = useState("0%");
+  const [batteryLevel, setBatteryLevel] = useState("Empty"); // Possible values: "Empty", "Quarter", "ThreeQuarter", "Full"
   const [statusIndicator, setStatusIndicator] = useState("Alert"); // Possible values: "Alert", "Error", "Warning"
   const [modeIndicator, setModeIndicator] = useState("Teleop"); // Possible values: "Teleop", "Arrival", "Auto"
   const [connectionIndicator, setConnectionIndicator] = useState("None"); //Possible values: "None", "Low", "Good"
@@ -46,32 +68,53 @@ const StatusBar = () => {
   const [showTimerPopup, setShowTimerPopup] = useState(false);
   const [showAlertPopup, setShowAlertPopup] = useState(false);
 
-  // Determine which connection image to display
-  const connectionImage = connectionStatus === "Connected" ? HighConnection : LowConnection;
-
   // Map statusIndicator value to corresponding image
   const statusIndicatorImage = {
     Alert: AlertIndicator,
     Error: ErrorIndicator,
     Warning: WarningIndicator,
-    }[statusIndicator];
+  }[statusIndicator];
 
   // Map modeIndicator value to corresponding image
   const modeIndicatorImage = {
     Teleop: TeleopIndicator,
     Arrival: ArrivalIndicator,
     Auto: AutoIndicator,
-    }[modeIndicator];
+  }[modeIndicator];
 
   // Map connectionIndicator value to corresponding image
   const connectionIndicatorImage = {
     None: NoConnection,
     Low: LowConnection,
     Good: HighConnection,
-    }[connectionIndicator] || NoConnection;
+  }[connectionIndicator] || NoConnection;
+
+  // Map batteryLevel value to corresponding image
+  const batteryImage = {
+    Empty: EmptyBattery,
+    Quarter: QuarterBattery,
+    Half: HalfBattery,
+    ThreeQuarter: ThreeQuarterBattery,
+    Full: FullBattery,
+  }[batteryLevel] || EmptyBattery;
+
+  // Helper function to format time in HH:MM:SS
+  const formatTime = (seconds) => {
+    const hrs = Math.floor(seconds / 3600).toString().padStart(2, '0');
+    const mins = Math.floor((seconds % 3600) / 60).toString().padStart(2, '0');
+    const secs = (seconds % 60).toString().padStart(2, '0');
+    return `${hrs}:${mins}:${secs}`;
+  };
 
   // Handlers for clickable elements
   const handleTimerClick = () => {
+    if (isRunning) {
+      setHours(Math.floor(remainingTime / 3600));
+      setMinutes(Math.floor((remainingTime % 3600) / 60));
+    } else {
+      setHours(Math.floor(initialTime / 3600));
+      setMinutes(Math.floor((initialTime % 3600) / 60));
+    }
     setShowTimerPopup(true);
   };
 
@@ -87,14 +130,60 @@ const StatusBar = () => {
   };
 
   const handleStartClick = () => {
-    console.log("Start");
+    if (isRunning) {
+      // Prevent multiple intervals
+      return;
+    }
+    const totalSeconds = hours * 3600 + minutes * 60;
+    setInitialTime(totalSeconds);
+    setRemainingTime(totalSeconds);
+    setIsRunning(true);
+    timerRef.current = setInterval(() => {
+      setRemainingTime(prev => {
+        if (prev <= 1) {
+          clearInterval(timerRef.current);
+          setIsRunning(false);
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
     setShowTimerPopup(false);
   };
 
   const handleStopClick = () => {
-    console.log("Stop");
+    if (isRunning) {
+      clearInterval(timerRef.current);
+      setIsRunning(false);
+    }
     setShowTimerPopup(false);
   };
+
+  // Handler functions for timer arrows
+  const handleIncreaseHour = () => {
+    setHours(prev => (prev < 23 ? prev + 1 : 0));
+  };
+
+  const handleDecreaseHour = () => {
+    setHours(prev => (prev > 0 ? prev - 1 : 23));
+  };
+
+  const handleIncreaseMinute = () => {
+    setMinutes(prev => (prev < 59 ? prev + 1 : 0));
+  };
+
+  const handleDecreaseMinute = () => {
+    setMinutes(prev => (prev > 0 ? prev - 1 : 59));
+  };
+
+  // Clean up the interval on component unmount
+  useEffect(() => {
+    return () => {
+      if (timerRef.current) {
+        clearInterval(timerRef.current);
+      }
+    };
+  }, []);
 
   // Determine popup header background color based on statusIndicator
   const getPopupHeaderStyle = () => {
@@ -126,19 +215,75 @@ const StatusBar = () => {
           <div className={styles.overlay} onClick={handleClosePopup}></div>
           <div className={styles.popup}>
             <div className={styles.popupBox}>
-              <div className={styles.popupHeader} style={{ backgroundColor: "#0A2342" }}>
+              <div className={styles.popupHeader} style={getPopupHeaderStyle()}>
                 <h2
                   className={styles.popupTitle}
-                  style={{ color: "#FFFFFF" }}
+                  style={getPopupTitleStyle()}
                 >
                   Set Timer
                 </h2>
                 <img
-                  src={Exit}
+                  src={getExitImage()}
                   alt="Exit"
                   className={styles.exitImage}
                   onClick={handleClosePopup}
                 />
+              </div>
+              <div className={styles.timerPopupContainer}>
+                {/* Hours Section */}
+                <div className={styles.timerSection}>
+                  <p className="text-white text-[2em] font-chivo opacity-70 m-0 -ml-1 leading-none">
+                    Hours
+                  </p>
+                  <div className={styles.timerControls}>
+                    <p className={styles.timerDigit}>{String(hours).padStart(2, '0')}</p>
+                    <div className={styles.arrowContainer}>
+                      <img 
+                        src={UpArrow} 
+                        alt="Increase Hour" 
+                        className={styles.arrowImage} 
+                        onClick={handleIncreaseHour} 
+                        aria-label="Increase Hour"
+                      />
+                      <img 
+                        src={DownArrow} 
+                        alt="Decrease Hour" 
+                        className={styles.arrowImage} 
+                        onClick={handleDecreaseHour} 
+                        aria-label="Decrease Hour"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Colon */}
+                <p className={styles.colon}>:</p> {/* Ensure font size matches digits */}
+
+                {/* Minutes Section */}
+                <div className={styles.timerSection}>
+                  <p className="text-white text-[2em] font-chivo opacity-70 m-0 -ml-1 leading-none">
+                    Minutes
+                  </p>
+                  <div className={styles.timerControls}>
+                    <p className={styles.timerDigit}>{String(minutes).padStart(2, '0')}</p>
+                    <div className={styles.arrowContainer}>
+                      <img 
+                        src={UpArrow} 
+                        alt="Increase Minute" 
+                        className={styles.arrowImage} 
+                        onClick={handleIncreaseMinute} 
+                        aria-label="Increase Minute"
+                      />
+                      <img 
+                        src={DownArrow} 
+                        alt="Decrease Minute" 
+                        className={styles.arrowImage} 
+                        onClick={handleDecreaseMinute} 
+                        aria-label="Decrease Minute"
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
               {/* Buttons */}
               <div className={styles.popupButtons}>
@@ -159,6 +304,8 @@ const StatusBar = () => {
           </div>
         </>
       )}
+
+      {/* Main Status Bar */}
       <div className={styles.container}>
         {/* Group all items in a single div */}
         <div className={styles.content}>
@@ -169,7 +316,7 @@ const StatusBar = () => {
 
           {/* Timer with Mode Indicator */}
           <img src={modeIndicatorImage} alt="Mode Indicator" className={styles.image} />
-          <p className={styles.text} onClick={handleTimerClick}>Timer: {timer}</p>
+          <p className={styles.text} onClick={handleTimerClick}>Timer: {formatTime(remainingTime)}</p>
 
           {/* Connection Status Image */}
           <img
@@ -179,7 +326,7 @@ const StatusBar = () => {
           />
 
           {/* Battery Status */}
-          <img src={EmptyBattery} alt="Battery Status" className={styles.image} />
+          <img src={batteryImage} alt={`Battery Level: ${batteryLevel}`} className={styles.image} />
           
           {/* Status Indicator Image */}
           <img
@@ -219,7 +366,7 @@ const StatusBar = () => {
                 </p>
                 {/* Add details */}
               </div>
-              {/*buttons add here */}
+              {/* Buttons can be added here if needed */}
             </div>
           </div>
         </>
