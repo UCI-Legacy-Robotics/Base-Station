@@ -21,7 +21,6 @@ import DownArrow from '../assets/DownArrow.png';
 
 // Extended styles object with updated classes
 const styles = {
-  container: "fixed top-[1rem] right-[1rem] w-[55rem] h-[3.75rem] bg-[#041428] rounded-lg flex justify-center items-center px-[0.375rem] shadow-lg",
   content: "flex items-center gap-[2.2rem] justify-between",
   text: "text-white font-chivo text-base text-[1.14em] cursor-pointer",
   image: "w-[2rem] h-[2rem] cursor-pointer",
@@ -306,7 +305,7 @@ const StatusBar = () => {
       )}
 
       {/* Main Status Bar */}
-      <div className={styles.container}>
+      <div>
         {/* Group all items in a single div */}
         <div className={styles.content}>
           {/* Location Information */}
