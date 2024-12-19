@@ -14,4 +14,4 @@ const Controller = () => {
   );
 };
 
-export default Navigation;
+export default Controller;

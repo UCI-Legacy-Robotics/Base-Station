@@ -5,11 +5,11 @@ import StatusBar from '../components/Statusbar';
 
 // Define your styles
 const styles = {
-  NavBar: "fixed w-[18rem] text-[#FFFFFF] rounded-[0.5rem] bg-[#041428] left-[1rem] top-[1rem] bottom-[1rem]",
+  NavBar: "fixed w-[18rem] text-[#FFFFFF] rounded-[0.5rem] bg-[#041428] left-[1rem] top-[1rem] bottom-[1rem] z-10",
   StatusBar: "fixed top-[1rem] right-[1rem] z-20 w-[55rem] h-[3.75rem] bg-[#041428] rounded-lg flex justify-center items-center px-[0.375rem] shadow-lg",
   Container: "relative h-screen bg-[#0A2342] flex",
   Content: "relative pt-[5.75rem] pb-[1rem] pr-[1rem] pl-[20rem] h-full w-full",
-  Heading: "fixed top-[1rem] left-[20rem] text-white font-bold font-russo text-[2.75em] font-extrabold z-10 flex items-center",
+  Heading: "fixed top-[1rem] left-[20rem] text-white font-bold font-russo text-[2.75em] font-extrabold flex items-center",
 };
 
 // Mapping of paths to page titles
