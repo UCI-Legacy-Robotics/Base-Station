@@ -1,38 +1,25 @@
 import React, { useState } from "react";
 import Layout from "../components/Layout";
 import ToggleSwitch from "../components/ToggleSwitch";
+import Popup from "../components/Popup";
+
 import VerticalDivide from "../assets/VerticalDivide.png";
 import IdleData from "../assets/IdleData.png";
 import CapturedData from "../assets/CapturedData.png";
 import LoadingData from "../assets/LoadingData.png";
-import Exit from "../assets/Exit.png";
-import Capture from "../assets/CaptureButton.png";
 
 const styles = {
   Container:
     "bg-[#041428] rounded-md col-span-1 p-4 flex flex-col justify-between",
   Camera: "bg-[#305E69] w-full h-full rounded-md flex-grow cursor-pointer",
-  BottomContainer: "bg-[#041428] rounded-md w-fit px-4 py-4 -ml-8",
+  BottomContainer: "bg-[#041428] rounded-md w-full px-4 py-4",
   SectionTitle: "text-white text-[1.5em] mb-2 font-chivo-semibold",
   HeaderLabel: "text-white font-chivo-semibold text-[2rem] mb-1",
   Label: "text-white font-chivo-semibold text-[1.4rem]",
-  StatusBox: "bg-[#56656E] text-white text-center rounded-md p-3 w-[5rem]",
+  StatusBox: "bg-[#56656E] text-white text-center rounded-md p-3 w-[5.5rem]",
   DrillContainer: "flex flex-col items-start",
   DepthContainer: "flex flex-col items-center w-full",
-  Dataicon: "h-full w-full",
-
-  // Popup styles
-  overlay: "fixed inset-0 bg-[#323232] bg-opacity-75 z-40",
-  popup: "fixed inset-0 flex items-center justify-center z-50",
-  popupBox:
-    "w-[80rem] h-[50rem] bg-[#041428] rounded-lg shadow-lg p-[1rem] flex flex-col justify-center relative",
-  popupHeader:
-    "w-full h-[4.875rem] border-[0.375rem] border-black flex items-center px-[1rem] absolute top-0 left-0 rounded-t-lg",
-  popupTitle: "text-4xl font-bold text-white",
-  exitImage:
-    "w-[2.5rem] h-[2.5rem] cursor-pointer absolute right-[1rem] top-1/2 transform -translate-y-1/2",
-  captureButton:
-    "absolute bottom-[0.5rem] right-[0.8rem] w-[5rem] h-[5rem] shadow-lg cursor-pointer",
+  DataiconContainer: "h-full w-full",
 };
 
 const Science = () => {
@@ -45,6 +32,10 @@ const Science = () => {
   const [depth, setDepth] = useState(0);
   const [sensorStatus, setSensorStatus] = useState("Raised");
 
+  // Positions
+  const [drillPosition, setDrillPosition] = useState("Raised");
+  const [sensorPosition, setSensorPosition] = useState("Raised");
+
   // Data image
   const [currentDataImage, setCurrentDataImage] = useState("idle");
   const dataImageMap = {
@@ -53,69 +44,29 @@ const Science = () => {
     captured: CapturedData,
   };
 
-  // Popup state
+  // Popup states
   const [showPopup, setShowPopup] = useState(false);
   const [popupTitle, setPopupTitle] = useState("");
+  const [popupFeed, setPopupFeed] = useState("");
+
+  // Camera Feeds
+  const arduCam1Feed = "";
+  const arduCam2Feed = "";
 
   // Popup actions
-  const openPopup = (title) => {
+  const openPopup = (title, feedUrl) => {
     setPopupTitle(title);
+    setPopupFeed(feedUrl);
     setShowPopup(true);
   };
 
   const closePopup = () => {
     setShowPopup(false);
+    setPopupTitle("");
+    setPopupFeed("");
   };
 
-  // Inline Popup
-  const Popup = ({ title, onClose }) => {
-    const handleCaptureClick = () => {
-      const now = new Date();
-      const month = now.toLocaleString("en-US", { month: "short" });
-      const day = now.getDate();
-      const hours = now.getHours().toString().padStart(2, "0");
-      const minutes = now.getMinutes().toString().padStart(2, "0");
-      const timestamp = `${month}-${day}-${hours}:${minutes}`;
-      const logMessage = `${title.replace(/\s+/g, "")}-${timestamp}`;
-
-      console.log(logMessage);
-    };
-
-    return (
-      <>
-        {/* Dark overlay */}
-        <div className={styles.overlay} onClick={onClose}></div>
-
-        {/* Popup container */}
-        <div className={styles.popup}>
-          <div className={styles.popupBox}>
-            <div className={styles.popupHeader}>
-              <h2 className={styles.popupTitle}>{title}</h2>
-              <img
-                src={Exit}
-                alt="Exit"
-                className={styles.exitImage}
-                onClick={onClose}
-              />
-            </div>
-
-            {/* camera feed area */}
-            <div className="flex-grow mt-20 relative">
-              <div className="bg-black w-full h-full">{/* feed here */}</div>
-              <img
-                src={Capture}
-                alt="Capture Button"
-                className={styles.captureButton}
-                onClick={handleCaptureClick}
-              />
-            </div>
-          </div>
-        </div>
-      </>
-    );
-  };
-
-  // Change data image
+  // Update data image
   const changeDataImage = (imageKey) => {
     if (dataImageMap[imageKey]) {
       setCurrentDataImage(imageKey);
@@ -143,38 +94,37 @@ const Science = () => {
 
   return (
     <Layout>
-      <div className="h-full w-full grid grid-rows-[5fr_1fr] grid-cols-2 gap-4">
-        {/*
-          ArduCam 1
-        */}
+      <div className="h-full w-full grid grid-rows-[5fr_1fr] grid-cols-2 gap-[1rem]">
+        {/* ArduCam 1 */}
         <div className={styles.Container}>
           <p className={styles.SectionTitle}>ArduCam 1</p>
           <div
             className={styles.Camera}
-            onClick={() => openPopup("ArduCam 1")}
+            onClick={() => openPopup("ArduCam 1", arduCam1Feed)}
           ></div>
         </div>
 
-        {/*
-          ArduCam 2
-        */}
+        {/* ArduCam 2 */}
         <div className={styles.Container}>
           <p className={styles.SectionTitle}>ArduCam 2</p>
           <div
             className={styles.Camera}
-            onClick={() => openPopup("ArduCam 2")}
+            onClick={() => openPopup("ArduCam 2", arduCam2Feed)}
           ></div>
         </div>
 
-        {/* 
-          control panel
-        */}
+        {/* Control panel */}
         <div className="col-span-2 flex justify-center items-center">
+          {/*
+            Controls
+          */}
           <div className={styles.BottomContainer}>
-            <div className="flex items-center justify-center w-full h-full">
-              {/* Left controls */}
-              <div className="flex items-baseline space-x-14">
-                {/* Drill */}
+            <div className="flex w-full items-center justify-between">
+              {/*
+                Drill
+              */}
+              <div className="flex items-center gap-10">
+                {/* Drill Toggle */}
                 <div className={styles.DrillContainer}>
                   <h1 className={styles.HeaderLabel}>Drill</h1>
                   <ToggleSwitch
@@ -187,23 +137,31 @@ const Science = () => {
                   />
                 </div>
 
+                {/* Drill Position */}
+                <div className="flex flex-col items-center">
+                  <p className={styles.Label}>Status</p>
+                  <div className={styles.StatusBox}>{drillPosition}</div>
+                </div>
+
                 {/* Depth */}
-                <div className={styles.DepthContainer}>
+                <div className="flex flex-col items-center">
                   <p className={styles.Label}>Depth</p>
                   <div className={styles.StatusBox}>{depth} cm</div>
                 </div>
               </div>
 
-              {/* Divider */}
+              {/* Divider in the middle */}
               <img
                 src={VerticalDivide}
                 alt="Divider"
-                className="mx-8 h-[5rem]"
+                className="h-[5rem] pr-2"
               />
 
-              {/* Right controls */}
-              <div className="flex items-baseline space-x-14">
-                {/* Sensors */}
+              {/*
+                Sensors
+              */}
+              <div className="flex items-center gap-10">
+                {/* Sensors Toggle */}
                 <div className={styles.DrillContainer}>
                   <h1 className={styles.HeaderLabel}>Sensors</h1>
                   <ToggleSwitch
@@ -216,14 +174,22 @@ const Science = () => {
                   />
                 </div>
 
+                {/* Sensor Position */}
+                <div className="flex flex-col items-center">
+                  <p className={styles.Label}>Status</p>
+                  <div className={styles.StatusBox}>{sensorPosition}</div>
+                </div>
+
                 {/* Data */}
-                <div className={styles.DepthContainer}>
+                <div className="flex flex-col items-center">
                   <p className={styles.Label}>Data</p>
-                  <img
-                    src={dataImageMap[currentDataImage]}
-                    alt="Data Capture Indicator"
-                    className={styles.Dataicon}
-                  />
+                  <div className="px-3 w-[5rem]">
+                    <img
+                      src={dataImageMap[currentDataImage]}
+                      alt="Data Capture Indicator"
+                      className={styles.DataiconContainer}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -231,8 +197,10 @@ const Science = () => {
         </div>
       </div>
 
-      {/* Conditionally render the Popup */}
-      {showPopup && <Popup title={popupTitle} onClose={closePopup} />}
+      {/* Conditionally render Popup with the feedUrl */}
+      {showPopup && (
+        <Popup title={popupTitle} onClose={closePopup} feedUrl={popupFeed} />
+      )}
     </Layout>
   );
 };
