@@ -1,18 +1,17 @@
 import React, { useState } from "react";
 import Layout from "../components/Layout";
+import CameraPopup from "../components/CameraPopup";
 
 const styles = {
-  cardhalfHeight: "bg-[#041428] rounded-md p-[1rem] flex flex-col h-1/2",
-  cardLarge: "bg-[#041428] rounded-md p-[1rem] flex flex-col flex-grow-[2]",
+  CardhalfHeight: "bg-[#041428] rounded-md p-[1rem] flex flex-col h-1/2",
+  CardLarge: "bg-[#041428] rounded-md p-[1rem] flex flex-col flex-grow-[2]",
   flexGrowCol: "flex-grow flex flex-col gap-[1rem]",
-
   controlsRow: "flex gap-[1rem] mt-auto",
   launchKeyContainer:
     "flex-grow-[10] h-20 bg-[#041428] rounded-md flex items-center px-4 gap-[1rem]",
   abortContainer:
     "flex-grow h-20 bg-[#041428] rounded-md p-4 flex items-center",
-
-  Header: "text-white text-[1.5em] mb-2 font-chivo-semibold",
+  Header: "text-white text-[1.5em] mb-2 font-chivo font-semibold",
   Cam: "bg-[#305E69] w-full h-full rounded-md flex-grow",
   ArmOrintation: "border boarder-white w-full h-full rounded-md flex-grow",
   TextInput:
@@ -28,6 +27,10 @@ const styles = {
 const Arm = () => {
   // Launch Key Handler
   const [launchKey, setLaunchKey] = useState("");
+  const [showPopup, setShowPopup] = useState(false);
+  const [popupTitle, setPopupTitle] = useState("");
+  const [feedUrl, setFeedUrl] = useState("");
+
   const handleEnter = () => {
     console.log("Launch Key:", launchKey);
     setLaunchKey("");
@@ -44,6 +47,14 @@ const Arm = () => {
     setLaunchKey(rawValue);
   };
 
+  const handlePopupOpen = (title, url) => {
+    setPopupTitle(title);
+    setFeedUrl(url);
+    setShowPopup(true);
+  };
+
+  const handlePopupClose = () => setShowPopup(false);
+
   const spacedValue = launchKey.split("").join(" ");
 
   return (
@@ -54,9 +65,12 @@ const Arm = () => {
         */}
         <div className={`flex gap-[1rem] flex-grow`}>
           {/* ArduCam */}
-          <div className={styles.cardLarge}>
+          <div className={styles.CardLarge}>
             <h1 className={styles.Header}>Ardu Cam</h1>
-            <div className={styles.Cam}>{/* Cam feed */}</div>
+            <div
+              className={styles.Cam}
+              onClick={() => handlePopupOpen("Ardu Cam", "url_to_arducam_feed")}
+            />
           </div>
 
           {/* 
@@ -64,7 +78,7 @@ const Arm = () => {
           */}
           <div className={styles.flexGrowCol}>
             {/* Arm Orientation */}
-            <div className={styles.cardhalfHeight}>
+            <div className={styles.CardhalfHeight}>
               <h1 className={styles.Header}>Arm Orientation</h1>
               <div className={styles.ArmOrintation}>
                 {/* Orientation feed */}
@@ -72,9 +86,14 @@ const Arm = () => {
             </div>
 
             {/* ZedCam */}
-            <div className={styles.cardhalfHeight}>
+            <div className={styles.CardhalfHeight}>
               <h1 className={styles.Header}>Zed Camera 1</h1>
-              <div className={styles.Cam}>{/* Cam feed */}</div>
+              <div
+                className={styles.Cam}
+                onClick={() =>
+                  handlePopupOpen("Zed Camera 1", "url_to_zedcam1_feed")
+                }
+              />
             </div>
           </div>
         </div>
@@ -104,6 +123,15 @@ const Arm = () => {
             </button>
           </div>
         </div>
+
+        {/* Camera Popup */}
+        {showPopup && (
+          <CameraPopup
+            title={popupTitle}
+            onClose={handlePopupClose}
+            feedUrl={feedUrl}
+          />
+        )}
       </div>
     </Layout>
   );
