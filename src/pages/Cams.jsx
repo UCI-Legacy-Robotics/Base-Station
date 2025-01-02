@@ -5,7 +5,7 @@ import CameraPopup from "../components/CameraPopup";
 const styles = {
   Quadrant:
     "bg-[#041428] flex flex-col justify-start items-start text-white relative p-4 rounded-md",
-  QuadrentTitle: "text-white text-[1.5em] mb-2 font-chivo-semibold ",
+  QuadrentTitle: "text-white text-[1.5em] mb-2 font-chivo font-semibold",
   Content: "flex-grow bg-[#0A1E2B] w-full h-full rounded cursor-pointer",
 };
 
