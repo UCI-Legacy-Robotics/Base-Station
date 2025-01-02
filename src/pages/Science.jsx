@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Layout from "../components/Layout";
 import ToggleSwitch from "../components/ToggleSwitch";
-import Popup from "../components/Popup";
+import Popup from "../components/CameraPopup";
 
 import VerticalDivide from "../assets/VerticalDivide.png";
 import IdleData from "../assets/IdleData.png";
