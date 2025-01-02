@@ -1,15 +1,110 @@
-import React from 'react';
-import Layout from '../components/Layout';
+import React, { useState } from "react";
+import Layout from "../components/Layout";
 
-// Styles object
 const styles = {
-  // Label: "styleinfo",
+  cardhalfHeight: "bg-[#041428] rounded-md p-[1rem] flex flex-col h-1/2",
+  cardLarge: "bg-[#041428] rounded-md p-[1rem] flex flex-col flex-grow-[2]",
+  flexGrowCol: "flex-grow flex flex-col gap-[1rem]",
+
+  controlsRow: "flex gap-[1rem] mt-auto",
+  launchKeyContainer:
+    "flex-grow-[10] h-20 bg-[#041428] rounded-md flex items-center px-4 gap-[1rem]",
+  abortContainer:
+    "flex-grow h-20 bg-[#041428] rounded-md p-4 flex items-center",
+
+  Header: "text-white text-[1.5em] mb-2 font-chivo-semibold",
+  Cam: "bg-[#305E69] w-full h-full rounded-md flex-grow",
+  ArmOrintation: "border boarder-white w-full h-full rounded-md flex-grow",
+  TextInput:
+    "bg-[#56656E] text-white text-[1.3rem] font-russo p-[1rem] rounded-md flex-grow h-[3rem]",
+  EnterButton:
+    "bg-[#305E69] text-white text-[1.3rem] font-russo font-light rounded-md " +
+    "opacity-100 hover:opacity-60 transition-opacity w-[10rem] h-[3rem] flex items-center justify-center",
+  AbortButton:
+    "bg-[#9B111E] text-white text-[1.3rem] font-russo font-light px-[1rem] " +
+    "rounded-md opacity-100 hover:opacity-60 transition-opacity w-full h-[3rem] flex items-center justify-center",
 };
 
 const Arm = () => {
+  // Launch Key Handler
+  const [launchKey, setLaunchKey] = useState("");
+  const handleEnter = () => {
+    console.log("Launch Key:", launchKey);
+    setLaunchKey("");
+  };
+
+  // Abort Handler
+  const handleAbort = () => {
+    console.log("Abort Auto-Typing triggered");
+  };
+
+  // Parse Text Input
+  const handleInputChange = (e) => {
+    const rawValue = e.target.value.replace(/\s+/g, "");
+    setLaunchKey(rawValue);
+  };
+
+  const spacedValue = launchKey.split("").join(" ");
+
   return (
     <Layout>
-      <div className="bg-black h-full w-full"></div>
+      <div className="h-full w-full flex flex-col gap-[1rem]">
+        {/* 
+          Cams and Orientation 
+        */}
+        <div className={`flex gap-[1rem] flex-grow`}>
+          {/* ArduCam */}
+          <div className={styles.cardLarge}>
+            <h1 className={styles.Header}>Ardu Cam</h1>
+            <div className={styles.Cam}>{/* Cam feed */}</div>
+          </div>
+
+          {/* 
+            Right Section
+          */}
+          <div className={styles.flexGrowCol}>
+            {/* Arm Orientation */}
+            <div className={styles.cardhalfHeight}>
+              <h1 className={styles.Header}>Arm Orientation</h1>
+              <div className={styles.ArmOrintation}>
+                {/* Orientation feed */}
+              </div>
+            </div>
+
+            {/* ZedCam */}
+            <div className={styles.cardhalfHeight}>
+              <h1 className={styles.Header}>Zed Camera 1</h1>
+              <div className={styles.Cam}>{/* Cam feed */}</div>
+            </div>
+          </div>
+        </div>
+
+        {/* 
+          Controls
+        */}
+        <div className={styles.controlsRow}>
+          {/* Launch Key Controls */}
+          <div className={styles.launchKeyContainer}>
+            <input
+              type="text"
+              value={spacedValue}
+              onChange={handleInputChange}
+              placeholder="Enter Launch Key"
+              className={styles.TextInput}
+            />
+            <button onClick={handleEnter} className={styles.EnterButton}>
+              Enter
+            </button>
+          </div>
+
+          {/* Abort Auto-Typing Button */}
+          <div className={styles.abortContainer}>
+            <button onClick={handleAbort} className={styles.AbortButton}>
+              Abort Auto-Typing
+            </button>
+          </div>
+        </div>
+      </div>
     </Layout>
   );
 };
