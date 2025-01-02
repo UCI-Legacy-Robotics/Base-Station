@@ -16,64 +16,96 @@ const styles = {
   EntryText:
     "text-white font-semibold font-chivo flex items-center justify-center text-center w-1/3",
   RemoveIcon: "h-6 w-6 cursor-pointer opacity-90 hover:opacity-100",
+  ContextMenu: "h-fit w-[7rem] absolute bg-[#3B454B] text-white font-chivo font-normal p-[0.5rem] rounded-md shadow-md border-2 border-white z-50",
+  MenuItem: "px-4 hover:bg-[#4A627F] cursor-pointer rounded-md",
 };
 
 const Pictures = () => {
   const [selectedIndex, setSelectedIndex] = useState(null);
   const [popupTitle, setPopupTitle] = useState("");
   const [showPopup, setShowPopup] = useState(false);
-  const [entries, setEntries] = useState([]
-    // Array.from({ length: 20 }, (_, i) => ({
-    //   name: `ZEDCamera${(i % 2) + 1}-Dec-30-12:21`,
-    //   timestamp: "12:21:00",
-    //   camera: `ZED Camera ${(i % 2) + 1}`,
-    // }))
+  const [entries, setEntries] = useState(
+    Array.from({ length: 20 }, (_, i) => ({
+      name: `ZEDCamera${(i % 2) + 1}-Dec-30-12:21`,
+      timestamp: "12:21:00",
+      camera: `ZED Camera ${(i % 2) + 1}`,
+    }))
   );
+  // Place Context Menu
+  const [contextMenu, setContextMenu] = useState({
+    visible: false,
+    x: 0,
+    y: 0,
+    targetIndex: null,
+  });
 
   // Remove Photo
   const handleRemove = (indexToRemove) => {
     setEntries((prevEntries) =>
       prevEntries.filter((_, index) => index !== indexToRemove)
     );
+    setContextMenu({ visible: false });
   };
-  // Click Photo
-  const handleEntryClick = (entryName, index) => {
+
+  // Rename Entry
+  const handleRename = (index) => {
+    const newName = prompt("Enter a new name:", entries[index].name);
+    if (newName) {
+      setEntries((prevEntries) =>
+        prevEntries.map((entry, i) =>
+          i === index ? { ...entry, name: newName } : entry
+        )
+      );
+    }
+    setContextMenu({ visible: false });
+  };
+
+  // Open Photo
+  const handleOpen = (index) => {
     setSelectedIndex(index);
-    setPopupTitle(entryName);
+    setPopupTitle(entries[index].name);
     setShowPopup(true);
+    setContextMenu({ visible: false });
   };
-  // Close Popup
-  const handleClosePopup = () => {
-    setShowPopup(false);
-    setSelectedIndex(null);
+
+  // Context Menu Handlers
+  const handleContextMenu = (event, index) => {
+    event.preventDefault();
+    setContextMenu({
+      visible: true,
+      x: event.clientX,
+      y: event.clientY,
+      targetIndex: index,
+    });
+  };
+
+  const handleCloseContextMenu = () => {
+    setContextMenu({ visible: false });
   };
 
   return (
     <Layout>
-      <div className="bg-[#041428] h-full w-full rounded-b-md text-white p-4">
-        {/* 
-          Header Container
-        */}
+      <div
+        className="bg-[#041428] h-full w-full rounded-b-md text-white p-4"
+        onClick={handleCloseContextMenu}
+      >
+        {/* Header Container */}
         <div className={styles.HeaderContainer}>
           <div className={styles.HeaderText}>Name</div>
           <div className={styles.HeaderText}>Timestamp</div>
           <div className={styles.HeaderText}>Associated Camera</div>
         </div>
 
-        {/* 
-          Scroll Area
-        */}
+        {/* Scroll Area */}
         <div className={styles.ScrollContainer}>
-          {/* Entry Container */}
           {entries.map((entry, index) => (
             <div
               key={index}
-              onClick={() => handleEntryClick(entry.name, index)}
-              className={`${styles.EntryContainer} ${
-                selectedIndex === index ? "bg-[#56656E]" : "hover:bg-[#2A4A5E]"
-              }`}
+              onClick={() => handleOpen(index)}
+              onContextMenu={(e) => handleContextMenu(e, index)}
+              className={`${styles.EntryContainer} hover:bg-[#2A4A5E]`}
             >
-              {/* Entry Contents */}
+              {/* Photo Entrie Content */}
               <img src={ImageIcon} alt="Image Icon" className="h-6 w-6" />
               <div className={styles.EntryText}>{entry.name}</div>
               <div className={styles.EntryText}>{entry.timestamp}</div>
@@ -90,11 +122,40 @@ const Pictures = () => {
             </div>
           ))}
         </div>
+
+        {/* 
+          Context Menu
+        */}
+        {contextMenu.visible && (
+          <div
+            className={styles.ContextMenu}
+            style={{ top: contextMenu.y, left: contextMenu.x }}
+          >
+            <div
+              className={styles.MenuItem}
+              onClick={() => handleOpen(contextMenu.targetIndex)}
+            >
+              Open
+            </div>
+            <div
+              className={styles.MenuItem}
+              onClick={() => handleRename(contextMenu.targetIndex)}
+            >
+              Rename
+            </div>
+            <div
+              className={styles.MenuItem}
+              onClick={() => handleRemove(contextMenu.targetIndex)}
+            >
+              Delete
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Picture Popup */}
       {showPopup && (
-        <PicturePopup title={popupTitle} onClose={handleClosePopup} />
+        <PicturePopup title={popupTitle} onClose={() => setShowPopup(false)} />
       )}
     </Layout>
   );
