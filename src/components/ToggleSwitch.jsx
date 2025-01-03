@@ -1,23 +1,6 @@
-// ToggleSwitch.jsx
-
 import React from 'react';
 import PropTypes from 'prop-types';
 
-/**
- * ToggleSwitch Component
- *
- * A customizable toggle switch with labels on both sides.
- *
- * @param {Object} props
- * @param {string} props.labelLeft - Label displayed on the left side of the toggle.
- * @param {string} props.labelRight - Label displayed on the right side of the toggle.
- * @param {boolean} props.isToggled - Determines the toggle state (on/off).
- * @param {Function} props.onToggle - Callback function triggered when the toggle state changes.
- * @param {string} props.knobColorOn - Background color of the knob when toggled on.
- * @param {string} props.knobColorOff - Background color of the knob when toggled off.
- *
- * @returns {JSX.Element}
- */
 const ToggleSwitch = ({
   labelLeft,
   labelRight,
@@ -33,7 +16,9 @@ const ToggleSwitch = ({
         {labelLeft}
       </span>
 
-      {/* Toggle Switch */}
+      {/* 
+        Toggle Switch
+      */}
       <label className="relative inline-flex items-center cursor-pointer">
         <input
           type="checkbox"
@@ -41,6 +26,7 @@ const ToggleSwitch = ({
           checked={isToggled}
           onChange={onToggle}
         />
+        {/* Background Area */}
         <div
           className="
             w-24 h-8 bg-gray-200 rounded-full
@@ -51,7 +37,8 @@ const ToggleSwitch = ({
             peer-checked:bg-blue-600 
             transition-colors duration-300
           "
-        ></div>
+        />
+        {/* Knob */}
         <span
           className={`
             absolute left-0.5 top-0.5 w-7 h-7 rounded-full

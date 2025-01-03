@@ -16,7 +16,8 @@ const styles = {
   EntryText:
     "text-white font-semibold font-chivo flex items-center justify-center text-center w-1/3",
   RemoveIcon: "h-6 w-6 cursor-pointer opacity-90 hover:opacity-100",
-  ContextMenu: "h-fit w-[7rem] absolute bg-[#3B454B] text-white font-chivo font-normal p-[0.5rem] rounded-md shadow-md border-2 border-white z-50",
+  ContextMenu:
+    "h-fit w-[7rem] absolute bg-[#3B454B] text-white font-chivo font-normal p-[0.5rem] rounded-md shadow-md border-2 border-white z-50",
   MenuItem: "px-4 hover:bg-[#4A627F] cursor-pointer rounded-md",
 };
 
@@ -24,7 +25,8 @@ const Pictures = () => {
   const [selectedIndex, setSelectedIndex] = useState(null);
   const [popupTitle, setPopupTitle] = useState("");
   const [showPopup, setShowPopup] = useState(false);
-  const [entries, setEntries] = useState( []
+  const [entries, setEntries] = useState(
+    []
     // Array.from({ length: 20 }, (_, i) => ({
     //   name: `ZEDCamera${(i % 2) + 1}-Dec-30-12:21`,
     //   timestamp: "12:21:00",
