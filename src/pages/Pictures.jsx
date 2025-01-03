@@ -24,12 +24,12 @@ const Pictures = () => {
   const [selectedIndex, setSelectedIndex] = useState(null);
   const [popupTitle, setPopupTitle] = useState("");
   const [showPopup, setShowPopup] = useState(false);
-  const [entries, setEntries] = useState(
-    Array.from({ length: 20 }, (_, i) => ({
-      name: `ZEDCamera${(i % 2) + 1}-Dec-30-12:21`,
-      timestamp: "12:21:00",
-      camera: `ZED Camera ${(i % 2) + 1}`,
-    }))
+  const [entries, setEntries] = useState( []
+    // Array.from({ length: 20 }, (_, i) => ({
+    //   name: `ZEDCamera${(i % 2) + 1}-Dec-30-12:21`,
+    //   timestamp: "12:21:00",
+    //   camera: `ZED Camera ${(i % 2) + 1}`,
+    // }))
   );
   // Place Context Menu
   const [contextMenu, setContextMenu] = useState({
