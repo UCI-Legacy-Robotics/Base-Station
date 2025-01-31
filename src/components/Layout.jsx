@@ -25,6 +25,7 @@ const pathTitleMap = {
     "/Controller": "Controller",
     "/Logs": "Logs",
     "/Pictures": "Pictures",
+    "/System": "Sys-Tester",
 };
 
 const Layout = ({ children }) => {

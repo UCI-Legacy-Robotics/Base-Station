@@ -13,6 +13,7 @@ import ArmIcon from "../assets/ArmIcon.png";
 import ControllerIcon from "../assets/Controller.png";
 import LogsIcon from "../assets/LogsIcon.png";
 import PicturesIcon from "../assets/PicturesIcon.png";
+import SystemIcon from "../assets/SystemIcon.png";
 
 const styles = {
     container: "p-4",
@@ -168,6 +169,22 @@ const Navbar = () => {
                             className={styles.icon}
                         />
                         <span className={styles.text}>Controller</span>
+                    </a>
+                </li>
+                {/*
+        System
+      */}
+                <li>
+                    <a
+                        href="/System"
+                        className={getLinkClasses("/System", currentPath)}
+                    >
+                        <img
+                            src={SystemIcon}
+                            alt="System icon"
+                            className={styles.icon}
+                        />
+                        <span className={styles.text}>System</span>
                     </a>
                 </li>
                 {/*
