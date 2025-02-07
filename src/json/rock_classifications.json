@@ -1,0 +1,1100 @@
+{"Adakite": 
+    {"type": "Igneous", 
+    "minerals": ["Plagioclase","amphibole","pyroxene","biotite","quartz","magnetite"], 
+    "grain_size": "Fine-grained to porphyritic",
+    "colors": ["Light gray","grayish-white","beige","pinkish","greenish"], 
+    "key_words": ["Extrusive","porphyritic","feldspar-rich","silica-rich"]}, 
+
+"Agpaitic rock": 
+    {"type": "Igneous", 
+    "minerals": ["Alkali feldspar","nepheline","eudialyte","arfvedsonite","aegirine","sodalite","lamprophyllite"], 
+    "grain_size": "Coarse-grained to fine-grained",
+    "colors": ["Pink","reddish","gray","green","black"], 
+    "key_words": ["Intrusive","Coarse-grained","Feldspar-rich","Silica-undersaturated"]}, 
+
+"Andesite": 
+    {"type": "Extrusive igneous (Intermediate volcanic rock)", 
+    "minerals": ["Plagioclase feldspar","amphibole","pyroxene","biotite (sometimes)"], 
+    "grain_size": "Fine-grained to porphyritic",
+    "colors": ["Gray","brown","greenish"], 
+    "key_words": ["Extrusive","Intermediate","Volcanic","Porphyritic"]}, 
+
+"Alkali Feldspar Granite": 
+    {"type": "Intrusive igneous (Felsic plutonic rock)", 
+    "minerals": ["Alkali feldspar (abundant)","quartz","minor plagioclase","biotite/muscovite"], 
+    "grain_size": "Coarse-grained",
+    "colors": ["Light gray to pink"], 
+    "key_words": ["Intrusive","Coarse-grained","Felsic","Crystal-rich"]}, 
+
+"Ankaramite": 
+    {"type": "Extrusive igneous (Ultramafic volcanic rock)", 
+    "minerals": ["Olivine","pyroxene","and sometimes spinel"], 
+    "grain_size": "Typically fine-grained",
+    "colors": ["Dark green to black"], 
+    "key_words": ["Extrusive","Ultramafic","Fine-grained","Volcanic"]}, 
+
+"Anorthosite": 
+    {"type": "Intrusive igneous (Plutonic rock dominated by one mineral)", 
+    "minerals": ["Nearly pure plagioclase feldspar"], 
+    "grain_size": "Coarse-grained",
+    "colors": ["Light (white to gray)"], 
+    "key_words": ["Intrusive","Coarse-grained","Plagioclase-rich","Monomineralic"]}, 
+
+"Aplite": 
+    {"type": "Intrusive igneous (Felsic, often peripheral to larger intrusions)", 
+    "minerals": ["Quartz and feldspar (typically alkali feldspar)"], 
+    "grain_size": "Very fine-grained (aphanitic)",
+    "colors": ["White to light gray"], 
+    "key_words": ["Intrusive","Fine-grained","Felsic","Aphanitic"]}, 
+
+"Basalt": 
+    {"type": "Extrusive igneous (Mafic volcanic rock)", 
+    "minerals": ["Plagioclase","pyroxene","often olivine"], 
+    "grain_size": "Fine-grained (with possible phenocrysts)",
+    "colors": ["Dark gray to black"], 
+    "key_words": ["Extrusive","Mafic","Fine-grained","Volcanic"]}, 
+
+"ʻAʻā": 
+    {"type": "Volcanic lava (a type of basaltic flow)", 
+    "minerals": ["Essentially the same as basalt (plagioclase","pyroxene","olivine)"], 
+    "grain_size": "Fine-grained to glassy, with a clinkery, fragmented surface",
+    "colors": ["Dark gray to black"], 
+    "key_words": ["Extrusive","Lava flow","Vesicular","Rough-surfaced"]}, 
+
+"Pāhoehoe": 
+    {"type": "Volcanic lava (basaltic flow with a smooth appearance)", 
+    "minerals": ["Similar to basalt (plagioclase","pyroxene","olivine)"], 
+    "grain_size": "Fine-grained, often glassy",
+    "colors": ["Dark gray to black"], 
+    "key_words": ["Extrusive","Lava flow","Smooth","Vesicular"]}, 
+
+"Basaltic Andesite": 
+    {"type": "Extrusive igneous (Intermediate rock between basalt and andesite)", 
+    "minerals": ["Plagioclase","pyroxene","amphibole"], 
+    "grain_size": "Fine-grained with occasional phenocrysts",
+    "colors": ["Dark gray","sometimes with a greenish tint"], 
+    "key_words": ["Extrusive","Intermediate","Fine-grained","Transitional"]}, 
+
+" Basaltic Trachyandesite": 
+    {"type": "Extrusive igneous (Intermediate composition with affinities to both basalt and trachyte)", 
+    "minerals": ["Plagioclase","alkali feldspar","amphibole","pyroxene"], 
+    "grain_size": "Fine to porphyritic",
+    "colors": ["Dark gray","greenish"], 
+    "key_words": ["Extrusive","Intermediate","Porphyritic","Fine-grained"]}, 
+
+" Mugearite": 
+    {"type": "Extrusive igneous (A variant of basalt with high sodium)", 
+    "minerals": ["Plagioclase","clinopyroxene","olivine"], 
+    "grain_size": "Fine-grained",
+    "colors": ["Dark"], 
+    "key_words": ["Extrusive","Mafic","High Na","Fine-grained"]}, 
+
+" Shoshonite": 
+    {"type": "Extrusive igneous (Potassic basaltic rock)", 
+    "minerals": ["Plagioclase","clinopyroxene","biotite","sometimes olivine"], 
+    "grain_size": "Fine-grained with phenocrysts",
+    "colors": ["Dark gray","greenish"], 
+    "key_words": ["Extrusive","Potassic","Mafic","Porphyritic"]}, 
+
+" Basanite": 
+    {"type": "Extrusive igneous (Silica-undersaturated, mafic rock)", 
+    "minerals": ["Olivine","clinopyroxene","sometimes minor plagioclase"], 
+    "grain_size": "Fine-grained",
+    "colors": ["Dark gray to greenish"], 
+    "key_words": ["Extrusive","Mafic","Silica-undersaturated","Fine-grained"]}, 
+
+" Blairmorite": 
+    {"type": "Typically considered an intrusive igneous rock (with an alkaline character)", 
+    "minerals": ["Alkali feldspar with mafic phases; details can vary"], 
+    "grain_size": "Fine- to medium-grained, often porphyritic",
+    "colors": ["Variable (light to dark)"], 
+    "key_words": ["Intrusive","Porphyritic","Alkaline","Rare"]}, 
+
+" Boninite": 
+    {"type": "Extrusive igneous (A high-magnesium andesite from subduction environments)", 
+    "minerals": ["Olivine","pyroxene","amphibole"], 
+    "grain_size": "Typically fine-grained",
+    "colors": ["Greenish to brownish"], 
+    "key_words": ["Extrusive","Subduction-related","High Mg","Intermediate"]}, 
+
+" Carbonatite": 
+    {"type": "Igneous (Unusual rock dominated by carbonate minerals; can be intrusive or extrusive)", 
+    "minerals": ["Calcite","dolomite","ankerite (with accessory silicates)"], 
+    "grain_size": "Often fine-grained",
+    "colors": ["Light (white to gray) with occasional tints"], 
+    "key_words": ["Carbonate-rich","Uncommon","Felsic/Mafic","Extrusive/Intrusive"]}, 
+
+" Charnockite": 
+    {"type": "Intrusive igneous (A granitoid with a high-temperature, sometimes metamorphic, signature)", 
+    "minerals": ["Quartz","feldspar","and orthopyroxene"], 
+    "grain_size": "Medium- to coarse-grained",
+    "colors": ["Gray","pinkish"], 
+    "key_words": ["Intrusive","Granitic","Coarse-grained","Metamorphic influence"]}, 
+
+" Enderbite": 
+    {"type": "Intrusive igneous (Rare, ultramafic, alkaline rock)", 
+    "minerals": ["Pyroxene","nepheline","olivine"], 
+    "grain_size": "Fine-grained",
+    "colors": ["Dark"], 
+    "key_words": ["Intrusive","Ultramafic","Alkaline","Fine-grained"]}, 
+
+" Dacite": 
+    {"type": "Extrusive igneous (Intermediate, high-silica volcanic rock)", 
+    "minerals": ["Plagioclase","quartz","amphibole","biotite"], 
+    "grain_size": "Fine-grained with phenocrysts",
+    "colors": ["Light gray","pinkish"], 
+    "key_words": ["Extrusive","Intermediate","Fine-grained","Porphyritic"]}, 
+
+" Diabase (Dolerite)": 
+    {"type": "Intrusive (subvolcanic) igneous rock", 
+    "minerals": ["Plagioclase","pyroxene"], 
+    "grain_size": "Fine- to medium-grained",
+    "colors": ["Dark gray to black"], 
+    "key_words": ["Intrusive","Subvolcanic","Mafic","Fine-grained"]}, 
+
+" Diorite": 
+    {"type": "Intrusive igneous (Intermediate plutonic rock)", 
+    "minerals": ["Plagioclase","hornblende","biotite","sometimes quartz"], 
+    "grain_size": "Coarse-grained",
+    "colors": ["“Salt-and-pepper” mix (light and dark minerals)"], 
+    "key_words": ["Intrusive","Coarse-grained","Intermediate","Mixed-mineral"]}, 
+
+" Napoleonite (Corsite)": 
+    {"type": "Extrusive igneous (Rare volcanic rock with unusual, often alkaline, chemistry)", 
+    "minerals": ["Often characterized by feldspathoid phases with altered feldspars"], 
+    "grain_size": "Fine-grained",
+    "colors": ["Variable"], 
+    "key_words": ["Extrusive","Rare","Fine-grained","Alkaline"]}, 
+
+" Dunite": 
+    {"type": "Intrusive igneous (Ultramafic rock)", 
+    "minerals": ["Almost entirely olivine"], 
+    "grain_size": "Coarse-grained",
+    "colors": ["Green"], 
+    "key_words": ["Intrusive","Coarse-grained","Ultramafic","Olivine-rich"]}, 
+
+" Essexite": 
+    {"type": "Intrusive igneous (Rare, alkaline felsic rock)", 
+    "minerals": ["Alkali feldspar","quartz","and minor accessory phases"], 
+    "grain_size": "Fine- to medium-grained",
+    "colors": ["Light"], 
+    "key_words": ["Intrusive","Alkaline","Felsic","Fine-grained"]}, 
+
+" Foidolite": 
+    {"type": "Intrusive igneous (Rock dominated by feldspathoids)", 
+    "minerals": ["Nepheline","leucite","sodalite (depending on composition)"], 
+    "grain_size": "Fine- to medium-grained",
+    "colors": ["Generally light"], 
+    "key_words": ["Intrusive","Feldspathoid","Silica-undersaturated","Felsic"]}, 
+
+" Gabbro": 
+    {"type": "Intrusive igneous (Mafic plutonic rock)", 
+    "minerals": ["Plagioclase","pyroxene","sometimes olivine"], 
+    "grain_size": "Coarse-grained",
+    "colors": ["Dark green","black"], 
+    "key_words": ["Intrusive","Coarse-grained","Mafic","Plutonic"]}, 
+
+" Granite": 
+    {"type": "Intrusive igneous (Felsic plutonic rock)", 
+    "minerals": ["Quartz","alkali feldspar","plagioclase","biotite/muscovite"], 
+    "grain_size": "Coarse-grained",
+    "colors": ["Light (pink","gray","white)"], 
+    "key_words": ["Intrusive","Coarse-grained","Felsic","Crystal-rich"]}, 
+
+" Granodiorite": 
+    {"type": "Intrusive igneous (Intermediate between granite and diorite)", 
+    "minerals": ["Quartz","plagioclase","hornblende/biotite","minor alkali feldspar"], 
+    "grain_size": "Coarse-grained",
+    "colors": ["Light gray to pink"], 
+    "key_words": ["Intrusive","Coarse-grained","Intermediate","Felsic"]}, 
+
+" Granophyre": 
+    {"type": "Intrusive igneous (Felsic rock characterized by intergrowths)", 
+    "minerals": ["Quartz and alkali feldspar intergrowth"], 
+    "grain_size": "Fine- to medium-grained",
+    "colors": ["Light"], 
+    "key_words": ["Intrusive","Fine-grained","Felsic","Intergrowth"]}, 
+
+" Harzburgite": 
+    {"type": "Intrusive igneous (Residue ultramafic rock)", 
+    "minerals": ["Olivine and low-Ca (orthopyroxene)"], 
+    "grain_size": "Coarse-grained",
+    "colors": ["Green"], 
+    "key_words": ["Intrusive","Coarse-grained","Ultramafic","Residual"]}, 
+
+" Hornblendite": 
+    {"type": "Intrusive igneous (Mafic to ultramafic rock)", 
+    "minerals": ["Hornblende (nearly all)"], 
+    "grain_size": "Coarse-grained",
+    "colors": ["Dark green to black"], 
+    "key_words": ["Intrusive","Coarse-grained","Amphibole-dominant","Mafic"]}, 
+
+" Hyaloclastite": 
+    {"type": "Volcaniclastic (Fragmental volcanic rock from quench fragmentation)", 
+    "minerals": ["Glass shards and fragmented basaltic material"], 
+    "grain_size": "Ranges from fine to coarse, clastic",
+    "colors": ["Light gray to dark"], 
+    "key_words": ["Extrusive","Volcaniclastic","Clastic","Glassy"]}, 
+
+" Icelandite": 
+    {"type": "Extrusive igneous (Intermediate volcanic rock typical of Iceland)", 
+    "minerals": ["Plagioclase","amphibole","pyroxene"], 
+    "grain_size": "Fine-grained",
+    "colors": ["Gray to greenish"], 
+    "key_words": ["Extrusive","Intermediate","Fine-grained","Volcanic"]}, 
+
+" Ignimbrite": 
+    {"type": "Volcaniclastic (Welded pyroclastic flow deposit)", 
+    "minerals": ["Vitric fragments","pumice","and crystals"], 
+    "grain_size": "Fine- to medium-grained",
+    "colors": ["Typically gray (can vary)"], 
+    "key_words": ["Extrusive","Pyroclastic","Welded","Volcaniclastic"]}, 
+
+" Ijolite": 
+    {"type": "Intrusive igneous (Rare alkaline rock)", 
+    "minerals": ["Nepheline and pyroxene"], 
+    "grain_size": "Fine- to medium-grained",
+    "colors": ["Dark"], 
+    "key_words": ["Intrusive","Alkaline","Silica-undersaturated","Fine-grained"]}, 
+
+" Kimberlite": 
+    {"type": "Extrusive igneous (Volcanic rock, often deep-sourced)", 
+    "minerals": ["Olivine","phlogopite","garnet","clinopyroxene"], 
+    "grain_size": "Variable, typically porphyritic",
+    "colors": ["Dark"], 
+    "key_words": ["Extrusive","Diamondiferous","Porphyritic","Deep-sourced"]}, 
+
+" Komatiite": 
+    {"type": "Extrusive igneous (Ultramafic volcanic rock with high Mg)", 
+    "minerals": ["Olivine","pyroxene","often showing spinifex textures"], 
+    "grain_size": "Fine-grained to porphyritic",
+    "colors": ["Dark green"], 
+    "key_words": ["Extrusive","Ultramafic","High Mg","Spinifex texture"]}, 
+
+" Lamproite": 
+    {"type": "Extrusive igneous (Uncommon ultramafic to mafic volcanic rock)", 
+    "minerals": ["Olivine","phlogopite","carbonate","clinopyroxene"], 
+    "grain_size": "Typically fine-grained",
+    "colors": ["Dark"], 
+    "key_words": ["Extrusive","Ultramafic","Rare","Fine-grained"]}, 
+
+" Lamprophyre": 
+    {"type": "Intrusive igneous (Often dike-like, porphyritic mafic rock)", 
+    "minerals": ["Biotite","amphibole","feldspar"], 
+    "grain_size": "Porphyritic",
+    "colors": ["Dark"], 
+    "key_words": ["Intrusive","Porphyritic","Mafic","Dike"]}, 
+
+" Latite": 
+    {"type": "Extrusive igneous (Intermediate volcanic rock)", 
+    "minerals": ["Plagioclase","alkali feldspar","clinopyroxene"], 
+    "grain_size": "Fine-grained",
+    "colors": ["Gray"], 
+    "key_words": ["Extrusive","Intermediate","Fine-grained","Volcanic"]}, 
+
+" Leucitite": 
+    {"type": "Extrusive igneous (Silica‐undersaturated, alkaline rock)", 
+    "minerals": ["Leucite (often with minor nepheline)"], 
+    "grain_size": "Fine-grained",
+    "colors": ["Light"], 
+    "key_words": ["Extrusive","Alkaline","Silica-undersaturated","Fine-grained"]}, 
+
+" Lherzolite": 
+    {"type": "Intrusive igneous (Mantle-derived ultramafic rock)", 
+    "minerals": ["Olivine","orthopyroxene","clinopyroxene (± spinel)"], 
+    "grain_size": "Coarse-grained",
+    "colors": ["Green"], 
+    "key_words": ["Intrusive","Coarse-grained","Ultramafic","Mantle rock"]}, 
+
+" Monzodiorite": 
+    {"type": "Intrusive igneous (Intermediate between monzonite and diorite)", 
+    "minerals": ["Plagioclase","hornblende","minor alkali feldspar"], 
+    "grain_size": "Coarse-grained",
+    "colors": ["Intermediate"], 
+    "key_words": ["Intrusive","Coarse-grained","Intermediate","Mixed feldspar"]}, 
+
+" Monzogranite": 
+    {"type": "Intrusive igneous (Felsic rock with monzonitic affinities)", 
+    "minerals": ["Alkali feldspar","quartz","minor plagioclase"], 
+    "grain_size": "Coarse-grained",
+    "colors": ["Light"], 
+    "key_words": ["Intrusive","Coarse-grained","Felsic","Transitional"]}, 
+
+" Monzonite": 
+    {"type": "Intrusive igneous (Intermediate plutonic rock)", 
+    "minerals": ["Roughly equal parts plagioclase and alkali feldspar with minor mafic minerals"], 
+    "grain_size": "Coarse-grained",
+    "colors": ["Intermediate"], 
+    "key_words": ["Intrusive","Coarse-grained","Intermediate","Mixed feldspar"]}, 
+
+" Nepheline-bearing Diorite": 
+    {"type": "Intrusive igneous (Diorite modified by silica-undersaturation)", 
+    "minerals": ["Plagioclase","hornblende","and nepheline"], 
+    "grain_size": "Coarse-grained",
+    "colors": ["Intermediate"], 
+    "key_words": ["Intrusive","Coarse-grained","Intermediate","Alkaline"]}, 
+
+" Nepheline Syenite": 
+    {"type": "Intrusive igneous (Felsic, silica-undersaturated rock lacking quartz)", 
+    "minerals": ["Alkali feldspar","nepheline","minor mafic phases"], 
+    "grain_size": "Coarse-grained",
+    "colors": ["Light"], 
+    "key_words": ["Intrusive","Coarse-grained","Felsic","Silica-undersaturated"]}, 
+
+" Nephelinite": 
+    {"type": "Extrusive igneous (Silica-undersaturated volcanic rock)", 
+    "minerals": ["Nepheline","pyroxene"], 
+    "grain_size": "Fine-grained",
+    "colors": ["Dark"], 
+    "key_words": ["Extrusive","Fine-grained","Alkaline","Silica-undersaturated"]}, 
+
+" Norite": 
+    {"type": "Intrusive igneous (Mafic rock rich in orthopyroxene)", 
+    "minerals": ["Plagioclase","orthopyroxene"], 
+    "grain_size": "Coarse-grained",
+    "colors": ["Dark gray"], 
+    "key_words": ["Intrusive","Coarse-grained","Mafic","Orthopyroxene-rich"]}, 
+
+" Obsidian": 
+    {"type": "Extrusive igneous (Volcanic glass)", 
+    "minerals": ["Essentially glass (amorphous) with no crystalline structure"], 
+    "grain_size": "Aphanitic (glassy)",
+    "colors": ["Black","dark","sometimes with greenish or brown tints"], 
+    "key_words": ["Extrusive","Glassy","Aphanitic","Volcanic"]}, 
+
+" Pegmatite": 
+    {"type": "Intrusive igneous (Felsic rock with exceptionally large crystals)", 
+    "minerals": ["Quartz","feldspar","micas","and accessory minerals"], 
+    "grain_size": "Very coarse-grained",
+    "colors": ["Varied (often light)"], 
+    "key_words": ["Intrusive","Coarse-grained","Felsic","Crystal-rich"]}, 
+
+" Peridotite": 
+    {"type": "Intrusive igneous (Ultramafic mantle rock)", 
+    "minerals": ["Olivine","pyroxene","sometimes garnet"], 
+    "grain_size": "Coarse-grained",
+    "colors": ["Green"], 
+    "key_words": ["Intrusive","Coarse-grained","Ultramafic","Mantle-derived"]}, 
+
+" Phonolite": 
+    {"type": "Extrusive igneous (Silica-undersaturated, alkaline volcanic rock)", 
+    "minerals": ["Nepheline","leucite","sodalite (in some cases)"], 
+    "grain_size": "Fine-grained",
+    "colors": ["Dark","often gray"], 
+    "key_words": ["Extrusive","Fine-grained","Alkaline","Silica-undersaturated"]}, 
+
+" Phonotephrite": 
+    {"type": "Extrusive igneous (Intermediate between tephrite and phonolite)", 
+    "minerals": ["Nepheline","plagioclase","clinopyroxene"], 
+    "grain_size": "Fine-grained",
+    "colors": ["Dark"], 
+    "key_words": ["Extrusive","Fine-grained","Intermediate","Alkaline"]}, 
+
+" Picrite": 
+    {"type": "Extrusive igneous (High-Mg basalt variant)", 
+    "minerals": ["Olivine","pyroxene","minor plagioclase"], 
+    "grain_size": "Porphyritic",
+    "colors": ["Dark green"], 
+    "key_words": ["Extrusive","Mafic","High Mg","Porphyritic"]}, 
+
+" Porphyry": 
+    {"type": "Extrusive igneous (Rock with large crystals in a fine matrix)", 
+    "minerals": ["Variable – often feldspar (plus quartz and mafic minerals)"], 
+    "grain_size": "Porphyritic (large phenocrysts in a fine-grained groundmass)",
+    "colors": ["Variable"], 
+    "key_words": ["Extrusive","Porphyritic","Volcanic","Mixed grain"]}, 
+
+" Pumice": 
+    {"type": "Extrusive igneous (Highly vesicular volcanic rock)", 
+    "minerals": ["Glassy fragments; may include minor crystalline phases"], 
+    "grain_size": "Very fine (frothy texture)",
+    "colors": ["Light (white","gray)"], 
+    "key_words": ["Extrusive","Vesicular","Glassy","Lightweight"]}, 
+
+" Pyroxenite": 
+    {"type": "Intrusive igneous (Ultramafic rock dominated by pyroxene)", 
+    "minerals": ["Pyroxene"], 
+    "grain_size": "Coarse-grained",
+    "colors": ["Dark"], 
+    "key_words": ["Intrusive","Coarse-grained","Ultramafic","Mafic"]}, 
+
+" Quartz Diorite": 
+    {"type": "Intrusive igneous (Intermediate plutonic rock with quartz)", 
+    "minerals": ["Quartz","plagioclase","hornblende/biotite"], 
+    "grain_size": "Coarse-grained",
+    "colors": ["Intermediate"], 
+    "key_words": ["Intrusive","Coarse-grained","Intermediate","Mixed mineral"]}, 
+
+" Quartz Monzonite": 
+    {"type": "Intrusive igneous (Felsic to intermediate plutonic rock)", 
+    "minerals": ["Quartz","plagioclase","alkali feldspar"], 
+    "grain_size": "Coarse-grained",
+    "colors": ["Light to intermediate"], 
+    "key_words": ["Intrusive","Coarse-grained","Felsic","Mixed feldspar"]}, 
+
+" Quartzolite": 
+    {"type": "Intrusive igneous (Rare, quartz-dominated rock)", 
+    "minerals": ["Predominantly quartz with minor feldspar"], 
+    "grain_size": "Coarse-grained",
+    "colors": ["Light"], 
+    "key_words": ["Intrusive","Coarse-grained","Quartz-rich","Felsic"]}, 
+
+" Rhyodacite": 
+    {"type": "Extrusive igneous (Intermediate between dacite and rhyolite)", 
+    "minerals": ["Quartz","feldspars","amphibole","biotite"], 
+    "grain_size": "Fine-grained with phenocrysts",
+    "colors": ["Light"], 
+    "key_words": ["Extrusive","Intermediate","Fine-grained","Porphyritic"]}, 
+
+" Rhyolite": 
+    {"type": "Extrusive igneous (Felsic volcanic rock)", 
+    "minerals": ["Quartz","alkali feldspar","plagioclase","biotite"], 
+    "grain_size": "Fine-grained",
+    "colors": ["Light (pink","gray","white)"], 
+    "key_words": ["Extrusive","Fine-grained","Felsic","Volcanic"]}, 
+
+" Comendite": 
+    {"type": "Extrusive igneous (High-alkali felsic volcanic rock)", 
+    "minerals": ["Alkali feldspar","quartz","and sometimes biotite"], 
+    "grain_size": "Fine-grained",
+    "colors": ["Light"], 
+    "key_words": ["Extrusive","Felsic","High alkali","Fine-grained"]}, 
+
+" Pantellerite": 
+    {"type": "Extrusive igneous (Peralkaline felsic rock)", 
+    "minerals": ["Alkali feldspar","quartz","and peralkaline accessory minerals"], 
+    "grain_size": "Fine-grained",
+    "colors": ["Light"], 
+    "key_words": ["Extrusive","Felsic","Peralkaline","Fine-grained"]}, 
+
+" Scoria": 
+    {"type": "Extrusive igneous (Vesicular mafic rock)", 
+    "minerals": ["Pyroxene","plagioclase","olivine (in fragments)"], 
+    "grain_size": "Fine-grained and highly vesicular",
+    "colors": ["Dark (reddish or black)"], 
+    "key_words": ["Extrusive","Vesicular","Mafic","Volcanic"]}, 
+
+" Shonkinite": 
+    {"type": "Intrusive igneous (Mafic rock with silica-undersaturation)", 
+    "minerals": ["Nepheline","olivine","pyroxene"], 
+    "grain_size": "Coarse-grained",
+    "colors": ["Dark"], 
+    "key_words": ["Intrusive","Coarse-grained","Mafic","Silica-undersaturated"]}, 
+
+" Sovite": 
+    {"type": "Intrusive igneous (Rare ultramafic rock)", 
+    "minerals": ["Olivine","pyroxene","amphibole"], 
+    "grain_size": "Coarse-grained",
+    "colors": ["Dark"], 
+    "key_words": ["Intrusive","Coarse-grained","Ultramafic","Mafic"]}, 
+
+" Syenite": 
+    {"type": "Intrusive igneous (Felsic rock lacking quartz)", 
+    "minerals": ["Dominantly alkali feldspar with minor mafic minerals"], 
+    "grain_size": "Coarse-grained",
+    "colors": ["Light"], 
+    "key_words": ["Intrusive","Coarse-grained","Felsic","Silica-undersaturated"]}, 
+
+" Syenogranite": 
+    {"type": "Intrusive igneous (Transitional rock between syenite and granite)", 
+    "minerals": ["Alkali feldspar","quartz","minor plagioclase"], 
+    "grain_size": "Coarse-grained",
+    "colors": ["Light"], 
+    "key_words": ["Intrusive","Coarse-grained","Felsic","Transitional"]}, 
+
+" Tachylyte": 
+    {"type": "Extrusive igneous (Glassy, rapidly cooled mafic rock)", 
+    "minerals": ["Volcanic glass (with little to no crystalline phases)"], 
+    "grain_size": "Aphanitic (glassy)",
+    "colors": ["Dark"], 
+    "key_words": ["Extrusive","Glassy","Aphanitic","Rapid cooling"]}, 
+
+" Tephriphonolite": 
+    {"type": "Extrusive igneous (Rare rock with mixed tephritic and phonolitic characteristics)", 
+    "minerals": ["Nepheline","alkali feldspar","clinopyroxene"], 
+    "grain_size": "Fine-grained",
+    "colors": ["Dark"], 
+    "key_words": ["Extrusive","Fine-grained","Alkaline","Silica-undersaturated"]}, 
+
+" Tephrite": 
+    {"type": "Extrusive igneous (Mafic, silica-undersaturated volcanic rock)", 
+    "minerals": ["Nepheline","olivine","clinopyroxene"], 
+    "grain_size": "Fine-grained",
+    "colors": ["Dark"], 
+    "key_words": ["Extrusive","Fine-grained","Mafic","Silica-undersaturated"]}, 
+
+" Tonalite": 
+    {"type": "Intrusive igneous (Felsic rock similar to granodiorite with dominant plagioclase)", 
+    "minerals": ["Plagioclase","quartz","hornblende"], 
+    "grain_size": "Coarse-grained",
+    "colors": ["Intermediate/light"], 
+    "key_words": ["Intrusive","Coarse-grained","Felsic","Plagioclase-dominant"]}, 
+
+" Trachyandesite": 
+    {"type": "Extrusive igneous (Intermediate volcanic rock)", 
+    "minerals": ["Plagioclase","alkali feldspar","pyroxene"], 
+    "grain_size": "Fine-grained, sometimes porphyritic",
+    "colors": ["Intermediate"], 
+    "key_words": ["Extrusive","Intermediate","Fine-grained","Porphyritic"]}, 
+
+" Benmoreite": 
+    {"type": "Extrusive igneous (Transitional basaltic rock trending toward trachytic composition)", 
+    "minerals": ["Plagioclase","alkali feldspar","pyroxene"], 
+    "grain_size": "Fine-grained",
+    "colors": ["Dark to intermediate"], 
+    "key_words": ["Extrusive","Transitional","Intermediate","Fine-grained"]}, 
+
+" Trachybasalt": 
+    {"type": "Extrusive igneous (Mafic rock with trachytic affinities)", 
+    "minerals": ["Plagioclase","alkali feldspar","pyroxene"], 
+    "grain_size": "Fine-grained",
+    "colors": ["Dark"], 
+    "key_words": ["Extrusive","Mafic","Fine-grained","Transitional"]}, 
+
+" Hawaiite": 
+    {"type": "Extrusive igneous (Intermediate volcanic rock typical of Hawaiian settings)", 
+    "minerals": ["Plagioclase","pyroxene","olivine"], 
+    "grain_size": "Fine-grained",
+    "colors": ["Dark"], 
+    "key_words": ["Extrusive","Intermediate","Fine-grained","Volcanic"]}, 
+
+" Trachyte": 
+    {"type": "Extrusive igneous (Felsic, alkaline volcanic rock)", 
+    "minerals": ["Alkali feldspar","minor quartz","biotite"], 
+    "grain_size": "Fine-grained",
+    "colors": ["Light"], 
+    "key_words": ["Extrusive","Fine-grained","Felsic","Alkaline"]}, 
+
+" Troctolite": 
+    {"type": "Intrusive igneous (Ultramafic rock with a significant plagioclase component)", 
+    "minerals": ["Olivine and plagioclase"], 
+    "grain_size": "Coarse-grained",
+    "colors": ["Light to greenish"], 
+    "key_words": ["Intrusive","Coarse-grained","Ultramafic","Plagioclase-bearing"]}, 
+
+" Trondhjemite": 
+    {"type": "Intrusive igneous (Plagioclase-dominated tonalite)", 
+    "minerals": ["Plagioclase","minor quartz","amphibole"], 
+    "grain_size": "Coarse-grained",
+    "colors": ["Light"], 
+    "key_words": ["Intrusive","Coarse-grained","Felsic","Plagioclase-dominant"]}, 
+
+" Tuff": 
+    {"type": "Volcaniclastic (Consolidated volcanic ash deposit)", 
+    "minerals": ["Ash fragments","glass shards","pumice fragments"], 
+    "grain_size": "Fine-grained, clastic",
+    "colors": ["Variable (often light gray)"], 
+    "key_words": ["Extrusive","Volcaniclastic","Clastic","Fine-grained"]}, 
+
+" Vitrophyre": 
+    {"type": "Extrusive igneous (Porphyritic volcanic rock with a glassy groundmass)", 
+    "minerals": ["Phenocrysts (varied) in a volcanic glass matrix"], 
+    "grain_size": "Porphyritic (large crystals in fine-grained matrix)",
+    "colors": ["Variable","often dark"], 
+    "key_words": ["Extrusive","Porphyritic","Glassy","Fine-grained matrix"]}, 
+
+" Websterite": 
+    {"type": "Intrusive igneous (Ultramafic rock with high orthopyroxene content)", 
+    "minerals": ["Orthopyroxene","olivine"], 
+    "grain_size": "Coarse-grained",
+    "colors": ["Dark"], 
+    "key_words": ["Intrusive","Coarse-grained","Ultramafic","Mafic"]}, 
+
+" Wehrlite": 
+    {"type": "Intrusive igneous (Ultramafic rock)", 
+    "minerals": ["Dominantly olivine with minor clinopyroxene"], 
+    "grain_size": "Coarse-grained",
+    "colors": ["Greenish"], 
+    "key_words": ["Intrusive","Coarse-grained","Ultramafic","Olivine-rich"]}, 
+
+"Argillite": 
+    {"type": "Fine-grained sedimentary rock (often a low-grade metamorphosed shale)", 
+    "minerals": ["Clay minerals (illite","smectite","kaolinite)","minor quartz and feldspar"], 
+    "grain_size": "Very fine-grained",
+    "colors": ["Gray","brown","greenish"], 
+    "key_words": ["Clay-rich","Fine-grained","Lithified","Low-grade metamorphism"]}, 
+
+"Arkose": 
+    {"type": "Clastic sedimentary rock (a feldspar-rich sandstone)", 
+    "minerals": ["Quartz and abundant alkali feldspar (with minor mica)"], 
+    "grain_size": "Sand-sized grains",
+    "colors": ["Reddish","pink","light brown"], 
+    "key_words": ["Sandstone","Feldspar-rich","Clastic","Erosional"]}, 
+
+"Banded Iron Formation": 
+    {"type": "Chemical sedimentary rock (deposited from aqueous solutions)", 
+    "minerals": ["Alternating layers of iron oxides (hematite/magnetite) and silica (chert)"], 
+    "grain_size": "Fine to medium; typically banded layers",
+    "colors": ["Alternating red","black","and gray bands"], 
+    "key_words": ["Chemical","Layered","Iron oxide","Chert"]}, 
+
+"Breccia": 
+    {"type": "Clastic sedimentary rock (composed of angular fragments)", 
+    "minerals": ["Fragments of various rock types cemented by calcite or silica"], 
+    "grain_size": "Coarse, with angular clasts",
+    "colors": ["Variable","depending on clast composition"], 
+    "key_words": ["Angular","Clastic","Coarse-grained","Cemented"]}, 
+
+"Calcarenite": 
+    {"type": "Clastic carbonate rock (a limestone built from sand-sized carbonate grains)", 
+    "minerals": ["Calcite (often from broken shell fragments)","with minor quartz"], 
+    "grain_size": "Sand-sized grains",
+    "colors": ["Light (white","beige","light gray)"], 
+    "key_words": ["Carbonate","Sand-sized","Clastic","Limestone"]}, 
+
+"Chalk": 
+    {"type": "Biogenic sedimentary rock (a soft, fine-grained limestone)", 
+    "minerals": ["Micritic calcite derived from coccoliths"], 
+    "grain_size": "Extremely fine (micritic)",
+    "colors": ["White to off-white","light gray"], 
+    "key_words": ["Limestone","Biogenic","Micritic","Soft"]}, 
+
+"Chert": 
+    {"type": "Chemical/biochemical sedimentary rock (cryptocrystalline silica)", 
+    "minerals": ["Microcrystalline quartz (SiO₂)"], 
+    "grain_size": "Cryptocrystalline (almost glassy)",
+    "colors": ["Often dark gray","black","with occasional reddish or brown hues"], 
+    "key_words": ["Silica","Cryptocrystalline","Hard","Chemical"]}, 
+
+"Claystone": 
+    {"type": "Clastic sedimentary rock (predominantly clay)", 
+    "minerals": ["Clay minerals (illite","kaolinite","smectite)"], 
+    "grain_size": "Very fine-grained (more massive than shale)",
+    "colors": ["Gray","brown","reddish"], 
+    "key_words": ["Clay-rich","Fine-grained","Massive","Lithified"]}, 
+
+"Coal": 
+    {"type": "Organic sedimentary rock", 
+    "minerals": ["Organic matter (carbonized plant material) with minor clay and mineral impurities"], 
+    "grain_size": "Not defined by grains; characterized by maceral composition",
+    "colors": ["Black to dark brown"], 
+    "key_words": ["Organic","Fossil fuel","Carbon-rich","Plant debris"]}, 
+
+" Conglomerate": 
+    {"type": "Clastic sedimentary rock (with rounded clasts)", 
+    "minerals": ["Rounded rock fragments (varied composition) cemented by calcite or silica"], 
+    "grain_size": "Coarse-grained, with clasts typically >2 mm",
+    "colors": ["Variable (depending on clast and matrix)"], 
+    "key_words": ["Rounded clasts","Clastic","Coarse-grained","Cemented"]}, 
+
+" Coquina": 
+    {"type": "Bioclastic sedimentary rock (a type of limestone)", 
+    "minerals": ["Calcite from accumulated shell fragments"], 
+    "grain_size": "Coarse-grained (fragmental)",
+    "colors": ["Light (cream","beige)"], 
+    "key_words": ["Shell fragments","Limestone","Biogenic","Coarse-grained"]}, 
+
+" Diamictite": 
+    {"type": "Clastic sedimentary rock (poorly sorted, often glacial in origin)", 
+    "minerals": ["Mixed lithic fragments within a fine-grained matrix"], 
+    "grain_size": "Very variable (from clay to boulders)",
+    "colors": ["Often dark or grayish","but variable"], 
+    "key_words": ["Unsorted","Glacial","Clastic","Heterolithic"]}, 
+
+" Diatomite": 
+    {"type": "Biogenic sedimentary rock", 
+    "minerals": ["Siliceous remains of diatoms (opal-A","amorphous silica)"], 
+    "grain_size": "Very fine, porous",
+    "colors": ["Light (white or off-white)"], 
+    "key_words": ["Biogenic","Siliceous","Diatoms","Porous"]}, 
+
+" Dolomite (Dolostone)": 
+    {"type": "Chemical/biochemical sedimentary rock (carbonate rock)", 
+    "minerals": ["Dolomite (CaMg(CO₃)₂)"], 
+    "grain_size": "Varies from fine to coarse, depending on deposition and recrystallization",
+    "colors": ["Generally light (white","gray","pinkish)"], 
+    "key_words": ["Carbonate","Dolomite","Chemical","Recrystallized"]}, 
+
+" Evaporite": 
+    {"type": "Chemical sedimentary rock", 
+    "minerals": ["Salts such as halite","gypsum","anhydrite","and sometimes sylvite"], 
+    "grain_size": "Crystalline; may be fine-grained",
+    "colors": ["Typically white","gray","or translucent (occasionally tinted by impurities)"], 
+    "key_words": ["Evaporative","Salt","Chemical","Crystalline"]}, 
+
+" Flint": 
+    {"type": "Variant of chert (a cryptocrystalline silica rock)", 
+    "minerals": ["Microcrystalline quartz (SiO₂)"], 
+    "grain_size": "Cryptocrystalline",
+    "colors": ["Usually dark gray","black","or brown"], 
+    "key_words": ["Hard","Silica","Cryptocrystalline","Chert variant"]}, 
+
+" Geyserite": 
+    {"type": "Chemical sedimentary rock (siliceous sinter)", 
+    "minerals": ["Silica (often opaline or microcrystalline quartz)"], 
+    "grain_size": "Very fine; often forms botryoidal or crusty textures",
+    "colors": ["White to light gray"], 
+    "key_words": ["Sinter","Siliceous","Geyser deposit","Chemical"]}, 
+
+" Greywacke": 
+    {"type": "Clastic sedimentary rock (a type of poorly sorted sandstone)", 
+    "minerals": ["Quartz","feldspar","rock fragments in a clay-rich matrix"], 
+    "grain_size": "Sand-sized but poorly sorted (mix of fine and coarse grains)",
+    "colors": ["Dark gray to brownish"], 
+    "key_words": ["Poorly sorted","Clastic","Heterogeneous","Sandstone"]}, 
+
+" Gritstone": 
+    {"type": "Clastic sedimentary rock (a coarse, gritty sandstone)", 
+    "minerals": ["Quartz (and sometimes feldspar) grains"], 
+    "grain_size": "Coarse sand-sized grains",
+    "colors": ["Reddish-brown","yellowish"], 
+    "key_words": ["Coarse-grained","Gritty","Sandstone","Clastic"]}, 
+
+" Ironstone": 
+    {"type": "Chemical/biochemical sedimentary rock (rich in iron)", 
+    "minerals": ["Iron oxides (hematite","limonite) often cemented with silica or carbonate"], 
+    "grain_size": "Fine-grained to compact",
+    "colors": ["Reddish-brown","rusty"], 
+    "key_words": ["Iron-rich","Oxidized","Chemical sedimentary","Hard"]}, 
+
+" Itacolumite": 
+    {"type": "Chemical sedimentary rock (often lateritic or ferruginous)", 
+    "minerals": ["Iron oxides and aluminum hydroxides (gibbsite)"], 
+    "grain_size": "Fine-grained, earthy",
+    "colors": ["Reddish-brown"], 
+    "key_words": ["Lateritic","Ferruginous","Oxidized","Weathered"]}, 
+
+" Jaspillite": 
+    {"type": "Chemical sedimentary rock (a fine-grained, jasper-like rock often linked to iron formations)", 
+    "minerals": ["Microcrystalline quartz (jasper) with iron oxides"], 
+    "grain_size": "Very fine-grained",
+    "colors": ["Reddish","brown","sometimes purple"], 
+    "key_words": ["Siliceous","Iron-rich","Fine-grained","Banded"]}, 
+
+" Laterite": 
+    {"type": "Residual sedimentary rock (a product of intense chemical weathering)", 
+    "minerals": ["Iron oxides (hematite) and aluminum oxides (gibbsite)"], 
+    "grain_size": "Fine-grained, earthy",
+    "colors": ["Reddish-brown to orange"], 
+    "key_words": ["Weathered","Residual","Iron-rich","Tropical"]}, 
+
+" Lignite": 
+    {"type": "Organic sedimentary rock (a low-grade form of coal)", 
+    "minerals": ["Organic matter with minor clay and mineral impurities"], 
+    "grain_size": "Fine, compacted organic matrix",
+    "colors": ["Brown to dark brown"], 
+    "key_words": ["Brown coal","Organic","Low-grade","Fossil fuel precursor"]}, 
+
+" Limestone": 
+    {"type": "Chemical/biochemical sedimentary rock (carbonate rock)", 
+    "minerals": ["Calcite (and sometimes aragonite)","often fossiliferous"], 
+    "grain_size": "Varies from fine (micritic) to coarse (oolitic or fossiliferous)",
+    "colors": ["Light (white","cream","gray)"], 
+    "key_words": ["Carbonate","Calcite","Fossiliferous","Chemical sedimentary"]}, 
+
+" Marl": 
+    {"type": "Mixed clastic and chemical sedimentary rock", 
+    "minerals": ["A mixture of clay minerals and calcite"], 
+    "grain_size": "Fine-grained",
+    "colors": ["Gray","greenish","light brown"], 
+    "key_words": ["Clay-carbonate","Mixed","Fine-grained","Sedimentary"]}, 
+
+" Mudstone": 
+    {"type": "Clastic sedimentary rock (lithified mud)", 
+    "minerals": ["Clay minerals and silt-sized quartz/feldspar fragments"], 
+    "grain_size": "Very fine to fine-grained",
+    "colors": ["Gray","brown","greenish"], 
+    "key_words": ["Fine-grained","Mudrock","Clastic","Lithified"]}, 
+
+" Oil Shale": 
+    {"type": "Organic sedimentary rock (rich in kerogen)", 
+    "minerals": ["Organic matter (kerogen) along with clay minerals and quartz"], 
+    "grain_size": "Fine-grained",
+    "colors": ["Dark gray to blackish"], 
+    "key_words": ["Organic","Energy resource","Kerogen","Fine-grained"]}, 
+
+" Oolite": 
+    {"type": "Chemical/biochemical sedimentary rock (formed from ooids)", 
+    "minerals": ["Calcite (or aragonite) forming concentric","spherical grains"], 
+    "grain_size": "Sand-sized, uniform, spherical grains (ooids)",
+    "colors": ["Light (white","cream)"], 
+    "key_words": ["Ooids","Carbonate","Spherical","Chemical sedimentary"]}, 
+
+" Phosphorite": 
+    {"type": "Chemical/biochemical sedimentary rock", 
+    "minerals": ["Apatite (calcium phosphate) as the dominant mineral"], 
+    "grain_size": "Fine-grained to medium, often forming concretionary textures",
+    "colors": ["Reddish-brown","brown","gray"], 
+    "key_words": ["Phosphate","Nutrient-rich","Chemical","Concretionary"]}, 
+
+" Sandstone": 
+    {"type": "Clastic sedimentary rock", 
+    "minerals": ["Quartz","feldspar","and minor lithic fragments"], 
+    "grain_size": "Sand-sized (0.0625–2 mm) grains",
+    "colors": ["Tan","red","white","gray (varies with cement and composition)"], 
+    "key_words": ["Clastic","Sand-sized","Cemented","Sedimentary"]}, 
+
+" Shale": 
+    {"type": "Clastic sedimentary rock (formed from consolidated mud)", 
+    "minerals": ["Clay minerals","silt","and minor quartz"], 
+    "grain_size": "Very fine-grained and fissile",
+    "colors": ["Gray","black","greenish","reddish"], 
+    "key_words": ["Fine-grained","Fissile","Mudrock","Layered"]}, 
+
+" Siltstone": 
+    {"type": "Clastic sedimentary rock (with a higher proportion of silt)", 
+    "minerals": ["Silt-sized quartz and feldspar particles with minor clay"], 
+    "grain_size": "Intermediate between shale and sandstone",
+    "colors": ["Light brown","gray","yellowish"], 
+    "key_words": ["Silt-dominated","Clastic","Fine to medium-grained","Sedimentary"]}, 
+
+" Sylvinite": 
+    {"type": "Chemical sedimentary rock (an evaporite)", 
+    "minerals": ["Primarily sylvite (potassium chloride) with halite"], 
+    "grain_size": "Crystalline; typically fine to medium",
+    "colors": ["Often colorless to light (white or translucent)"], 
+    "key_words": ["Evaporite","Potassium","Crystalline","Chemical"]}, 
+
+" Tillite": 
+    {"type": "Clastic sedimentary rock (lithified glacial till)", 
+    "minerals": ["A mix of rock fragments","clay","and silt"], 
+    "grain_size": "Poorly sorted (ranging from clay to boulders)",
+    "colors": ["Variable","often grayish or brownish"], 
+    "key_words": ["Glacial","Unsorted","Clastic","Lithified"]}, 
+
+" Travertine": 
+    {"type": "Chemical sedimentary rock (carbonate precipitate from springs)", 
+    "minerals": ["Calcite (and sometimes aragonite)"], 
+    "grain_size": "Fine-grained to microsparitic, often showing banding",
+    "colors": ["White","cream","tan"], 
+    "key_words": ["Precipitated","Carbonate","Spring deposit","Chemical"]}, 
+
+" Tufa": 
+    {"type": "Chemical/biochemical sedimentary rock (a porous limestone formed in freshwater)", 
+    "minerals": ["Calcite"], 
+    "grain_size": "Porous, loosely cemented",
+    "colors": ["Light (white","beige)"], 
+    "key_words": ["Porous","Carbonate","Freshwater","Low-density"]}, 
+
+" Turbidite": 
+    {"type": "Clastic sedimentary rock (deposited by turbidity currents in deep water)", 
+    "minerals": ["A mix of sand","silt","and clay (quartz","feldspar fragments)"], 
+    "grain_size": "Graded bedding from coarse (base) to fine (top)",
+    "colors": ["Variable","often darkening upward"], 
+    "key_words": ["Graded bedding","Turbidity current","Deep marine","Clastic"]}, 
+
+" Wackestone": 
+    {"type": "Bioclastic sedimentary rock (a type of limestone with a muddy matrix)", 
+    "minerals": ["Calcite from skeletal fragments mixed with mud (micrite)"], 
+    "grain_size": "Fine- to medium-grained (matrix-supported)",
+    "colors": ["Light (white","beige","gray)"], 
+    "key_words": ["Limestone","Mud-supported","Bioclastic","Fine-grained"]}, 
+
+"Anthracite": 
+    {"type": "Metamorphic rock (high-grade metamorphosed coal)", 
+    "minerals": ["Nearly pure carbon (graphitic carbon); very low mineral impurity"], 
+    "grain_size": "Fine-grained and dense",
+    "colors": ["Shiny","lustrous black"], 
+    "key_words": ["High-grade coal","Recrystallized carbon","Non-coking","Lustrous"]}, 
+
+"Amphibolite": 
+    {"type": "Metamorphic rock (commonly derived from basalt or gabbro)", 
+    "minerals": ["Hornblende (amphibole) and plagioclase; sometimes garnet or quartz"], 
+    "grain_size": "Medium- to coarse-grained; may show a foliated fabric",
+    "colors": ["Dark green to black","often with a somewhat granular appearance"], 
+    "key_words": ["Mafic","Foliated (or granoblastic)","Amphibole-rich","Regional metamorphism"]}, 
+
+"Blueschist": 
+    {"type": "Metamorphic rock (high-pressure, low-temperature metamorphism typical of subduction zones)", 
+    "minerals": ["Glaucophane (blue amphibole) is diagnostic; may include lawsonite or epidote"], 
+    "grain_size": "Typically fine- to medium-grained with a foliated texture",
+    "colors": ["Characteristic blue hues mixed with gray tones"], 
+    "key_words": ["High-pressure","Subduction-related","Foliated","Glaucophane"]}, 
+
+"Cataclasite": 
+    {"type": "Metamorphic fault rock produced by brittle deformation", 
+    "minerals": ["Angular fragments of the original rock (often quartz","feldspar) in a finer-grained","often recrystallized matrix"], 
+    "grain_size": "Generally fine- to medium-grained with irregular clasts",
+    "colors": ["Variable (frequently gray or brownish)"], 
+    "key_words": ["Fault rock","Brittle deformation","Cataclasis","Angular fragments"]}, 
+
+"Eclogite": 
+    {"type": "Metamorphic rock formed under very high pressures (eclogite facies)", 
+    "minerals": ["Garnet (typically pyrope) and omphacite (a high‐pressure clinopyroxene); sometimes accessory kyanite"], 
+    "grain_size": "Medium-grained and often granular",
+    "colors": ["Striking red (garnet) and green (omphacite) contrast"], 
+    "key_words": ["Ultra–high-pressure","Garnet–omphacite","Deep subduction","Recrystallized"]}, 
+
+"Gneiss": 
+    {"type": "High-grade metamorphic rock with a distinct banded or layered structure", 
+    "minerals": ["Quartz","feldspar","and micas (biotite/muscovite)","with possible amphibole or garnet in higher-grade varieties"], 
+    "grain_size": "Coarse-grained with alternating light and dark bands (gneissic banding)",
+    "colors": ["Variable; typically a mix of light (whitish/pinkish) and dark (gray/black) bands"], 
+    "key_words": ["Banded","Foliated","High-grade","Regional metamorphism"]}, 
+
+"Granulite": 
+    {"type": "High-temperature metamorphic rock (granulite facies) usually with little or no foliation", 
+    "minerals": ["Predominantly plagioclase and pyroxene","sometimes with garnet; quartz may be absent or minimal"], 
+    "grain_size": "Coarse-grained with a granoblastic (equigranular) texture",
+    "colors": ["Often light gray to greenish"], 
+    "key_words": ["High-temperature","Non-foliated","Granoblastic","Deep crust"]}, 
+
+"Greenschist": 
+    {"type": "Metamorphic rock formed at low- to moderate-grade conditions (greenschist facies)", 
+    "minerals": ["Chlorite","actinolite or epidote","with minor quartz"], 
+    "grain_size": "Fine- to medium-grained and typically well foliated",
+    "colors": ["Greenish to gray"], 
+    "key_words": ["Low-grade","Chlorite-rich","Foliated","Metamorphic facies"]}, 
+
+"Hornfels": 
+    {"type": "Metamorphic rock produced by contact metamorphism (non-foliated)", 
+    "minerals": ["Fine-grained recrystallized minerals such as feldspar","quartz","biotite","and sometimes hornblende"], 
+    "grain_size": "Very fine- to medium-grained, dense and often uniform",
+    "colors": ["Typically dark gray to brownish"], 
+    "key_words": ["Contact metamorphism","Recrystallized","Non-foliated","Fine-grained"]}, 
+
+" Calcflinta": 
+    {"type": "Metamorphic rock (a metamorphosed, calcareous–siliciclastic rock sometimes associated with ancient shields)", 
+    "minerals": ["A mix of quartz and calcite (with possible minor feldspar)","reflecting its mixed carbonate–siliciclastic origin"], 
+    "grain_size": "Fine- to medium-grained",
+    "colors": ["Often light gray with mottled or subtle pinkish hues"], 
+    "key_words": ["Calcareous–siliciclastic","Metamorphosed flint","Fine-grained","Shield rock"]}, 
+
+" Jadeitite": 
+    {"type": "Metamorphic rock formed under high-pressure conditions, typically associated with subduction settings", 
+    "minerals": ["Dominated by jadeite (a pyroxene mineral); may contain accessory omphacite or quartz"], 
+    "grain_size": "Fine- to medium-grained, often massive",
+    "colors": ["Vivid green (though shades may vary)"], 
+    "key_words": ["Ultrahigh-pressure","Jade","Green","Metamorphic"]}, 
+
+" Litchfieldite": 
+    {"type": "Often considered a meta–alkaline igneous rock that has experienced deformation; in some contexts it is treated among metamorphic rocks", 
+    "minerals": ["Typically rich in alkali feldspar with mafic minerals such as pyroxene; may show signs of recrystallization"], 
+    "grain_size": "Coarse-grained with possible development of a weak foliation",
+    "colors": ["Generally dark","ranging from gray-green to brownish"], 
+    "key_words": ["Meta–alkaline","Recrystallized","Coarse-grained","Transitional"]}, 
+
+" Marble": 
+    {"type": "Metamorphic rock derived from the metamorphism of limestone (or dolostone)", 
+    "minerals": ["Calcite (or dolomite)","recrystallized into interlocking crystals"], 
+    "grain_size": "Typically medium-grained with a crystalline texture",
+    "colors": ["White","cream","gray","or pink; may be veined by impurities"], 
+    "key_words": ["Recrystallized limestone","Carbonate","Decorative","Foliation (if developed)"]}, 
+
+" Migmatite": 
+    {"type": "Hybrid metamorphic rock representing partial melting (a mix of metamorphic and igneous components)", 
+    "minerals": ["Segregated domains of light (leucosome: quartz","feldspar) and dark (melanosome: mafic minerals","biotite","garnet) components"], 
+    "grain_size": "Highly variable; often displays a banded or streaked appearance",
+    "colors": ["Contrasting light and dark bands (e.g.","white/gray with dark streaks)"], 
+    "key_words": ["Partial melting","Hybrid","Leucosome","Melanosome","Transitory"]}, 
+
+" Mylonite": 
+    {"type": "Metamorphic rock produced by ductile shear (in zones of intense deformation)", 
+    "minerals": ["Recrystallized fragments of quartz","feldspar","and micas; mineral assemblages reflect the protolith"], 
+    "grain_size": "Very fine-grained overall with a distinct, lineated fabric",
+    "colors": ["Variable","often dark due to the presence of mafic components"], 
+    "key_words": ["Shear zone","Ductile deformation","Foliated","Fine-grained"]}, 
+
+" Metaconglomerate": 
+    {"type": "Metamorphosed conglomerate (original clastic rock modified by metamorphism)", 
+    "minerals": ["Recrystallized clasts (quartz","feldspar","etc.) in a finer-grained metamorphic matrix"], 
+    "grain_size": "Coarse clasts embedded in a finer, recrystallized groundmass",
+    "colors": ["Variable","reflecting the diverse composition of clasts and matrix"], 
+    "key_words": ["Clastic precursor","Recrystallized","Metamorphosed","Mixed grain"]}, 
+
+" Metapelite": 
+    {"type": "Metamorphic rock derived from clay-rich sediments (shale or mudstone)", 
+    "minerals": ["Micas (biotite","muscovite)","quartz","and recrystallized clay minerals"], 
+    "grain_size": "Fine- to medium-grained with a well-developed foliation",
+    "colors": ["Shades of gray","green","or brown"], 
+    "key_words": ["Pelitic","Foliated","Clay-derived","Metamorphosed shale"]}, 
+
+" Metapsammite": 
+    {"type": "Metamorphic rock derived from sandstone (a metamorphosed clastic rock)", 
+    "minerals": ["Quartz with minor feldspar and accessory minerals","often reoriented by deformation"], 
+    "grain_size": "Sand-sized protolith grains now recrystallized and often aligned",
+    "colors": ["Generally light—grays","tan","or pinkish"], 
+    "key_words": ["Sandstone-derived","Recrystallized","Foliated","Clastic origin"]}, 
+
+" Phyllite": 
+    {"type": "Metamorphic rock representing a transitional grade between slate and schist", 
+    "minerals": ["Fine-grained micas (muscovite","biotite) with quartz; may show incipient schistosity"], 
+    "grain_size": "Fine-grained with a slight sheen from mica reflection",
+    "colors": ["Silvery gray","greenish","or bluish tones"], 
+    "key_words": ["Lustrous","Foliated","Transitional","Fine-grained"]}, 
+
+" Pseudotachylite": 
+    {"type": "Metamorphic (or fault-related) rock formed by frictional melting during seismic slip", 
+    "minerals": ["A quenched","glassy or very fine-grained matrix that may include relic fragments of the protolith"], 
+    "grain_size": "Extremely fine, often appearing glassy",
+    "colors": ["Typically dark (black to very dark gray)"], 
+    "key_words": ["Friction melt","Shock metamorphism","Fault-generated","Glassy"]}, 
+
+" Quartzite": 
+    {"type": "Metamorphic rock derived from the metamorphism of quartz-rich sandstone", 
+    "minerals": ["Nearly pure quartz that recrystallized to form an interlocking mosaic"], 
+    "grain_size": "Generally coarse, with visible, interlocked quartz grains",
+    "colors": ["White","light gray","or pinkish (depending on impurities)"], 
+    "key_words": ["Recrystallized sandstone","Hard","Non-foliated","Quartz-rich"]}, 
+
+" Schist": 
+    {"type": "Medium- to high-grade metamorphic rock characterized by a strong schistosity (foliation)", 
+    "minerals": ["Abundant micas (biotite","muscovite)","with quartz","feldspar","and accessory garnet or staurolite"], 
+    "grain_size": "Medium-grained with visible, platy mineral grains",
+    "colors": ["Varied—grays","greens","browns","sometimes reddish"], 
+    "key_words": ["Foliated","Mica-rich","Layered","High-grade metamorphism"]}, 
+
+" Semipelite": 
+    {"type": "Metamorphic rock with an intermediate composition between pelite (clay-rich) and psammite (sand-rich)", 
+    "minerals": ["A mix of mica","quartz","and feldspar derived from mixed sedimentary precursors"], 
+    "grain_size": "Fine- to medium-grained with moderate foliation",
+    "colors": ["Typically grayish or greenish"], 
+    "key_words": ["Transitional","Mixed clastic","Foliated","Intermediate composition"]}, 
+
+" Serpentinite": 
+    {"type": "Metamorphic rock formed by the hydration (serpentinization) of ultramafic protoliths (e.g., peridotite)", 
+    "minerals": ["Serpentine group minerals (antigorite","lizardite","chrysotile) with possible minor magnetite or talc"], 
+    "grain_size": "Fine- to medium-grained; may occur in massive or weakly foliated form",
+    "colors": ["Typically green to yellow-green"], 
+    "key_words": ["Hydrated ultramafic","Serpentinization","Green","Altered"]}, 
+
+" Skarn": 
+    {"type": "Metamorphic–metasomatic rock formed at contact zones between igneous intrusions and carbonate rocks", 
+    "minerals": ["Calc–silicate minerals such as grossular","diopside","wollastonite","and sometimes garnet and pyroxene"], 
+    "grain_size": "Medium-grained with a heterogeneous, often interlayered texture",
+    "colors": ["Varied—often mottled grays","greens","and browns"], 
+    "key_words": ["Metasomatism","Calc–silicate","Contact metamorphism","Ore–associated"]}, 
+
+" Slate": 
+    {"type": "Low-grade metamorphic rock derived from shale", 
+    "minerals": ["Fine-grained micas (illite","biotite)","quartz","and chlorite formed by recrystallization of clay minerals"], 
+    "grain_size": "Very fine-grained and highly fissile (splits into thin sheets)",
+    "colors": ["Typically dark gray","greenish","or black"], 
+    "key_words": ["Foliated","Splitting","Fine-grained","Low-grade"]}, 
+
+" Suevite": 
+    {"type": "Impact-related rock that is often classified as a breccia with shock–metamorphic features and melt components", 
+    "minerals": ["Angular rock fragments in a fine–grained","often glassy or devitrified matrix"], 
+    "grain_size": "Ranges from coarse clasts to a very fine matrix",
+    "colors": ["Variable; often dark due to shock metamorphism and melt"], 
+    "key_words": ["Impact","Breccia","Shock metamorphism","Friction melt"]}, 
+
+" Talc Carbonate": 
+    {"type": "Metamorphic rock (often formed by metasomatic alteration of dolomitic/carbonate protoliths)", 
+    "minerals": ["Talc combined with carbonate minerals (calcite or dolomite)"], 
+    "grain_size": "Typically fine-grained, with a sometimes foliated or banded texture",
+    "colors": ["Light green to gray"], 
+    "key_words": ["Metasomatic","Carbonate alteration","Talc-rich","Calc–silicate"]}, 
+
+" Soapstone": 
+    {"type": "Metamorphic rock that is typically rich in talc (a variety of talc schist or talc–carbonate)", 
+    "minerals": ["Dominated by talc with accessory chlorite and sometimes minor carbonates or serpentine"], 
+    "grain_size": "Very fine-grained and soft",
+    "colors": ["Generally gray to greenish"], 
+    "key_words": ["Soft","Talc-rich","Malleable","Low-grade metamorphism"]}, 
+
+" Tectonite": 
+    {"type": "A general term for metamorphic rocks that display pervasive, tectonically induced fabric or deformation", 
+    "minerals": ["Varies with protolith; the key feature is a strong foliation or lineation reflecting intense deformation"], 
+    "grain_size": "Variable, often fine- to medium-grained with a highly aligned fabric",
+    "colors": ["Variable","depending on composition and metamorphic grade"], 
+    "key_words": ["Tectonically deformed","Foliated","Lineated","Structural"]}, 
+
+" Whiteschist": 
+    {"type": "Metamorphic rock (often formed under high–pressure conditions from mafic protoliths) that is unusually light in color", 
+    "minerals": ["Dominated by light-colored minerals such as albite and quartz; may include jadeite in high–pressure settings"], 
+    "grain_size": "Fine- to medium-grained, sometimes with a subtle foliation",
+    "colors": ["Light—white to light gray"], 
+    "key_words": ["High–pressure","Light-colored","Foliated","Metamorphic"]}
+
+}
